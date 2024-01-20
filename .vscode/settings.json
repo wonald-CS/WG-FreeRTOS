@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "hal_flash.h": "c",
+        "systick.h": "c",
+        "mt_flash.h": "c"
+    }
+}

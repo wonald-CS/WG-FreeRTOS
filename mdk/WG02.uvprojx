@@ -398,6 +398,16 @@
               <FileType>1</FileType>
               <FilePath>..\Hal\hal_usart.c</FilePath>
             </File>
+            <File>
+              <FileName>hal_Gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hal\hal_Gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>hal_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hal\hal_flash.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -635,6 +645,16 @@
               <FileName>system.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Public\system.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Mt</GroupName>
+          <Files>
+            <File>
+              <FileName>mt_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Mt\mt_flash.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -2,6 +2,8 @@
 ".\objects\hal_led.o"
 ".\objects\hal_init.o"
 ".\objects\hal_usart.o"
+".\objects\hal_gpio.o"
+".\objects\hal_flash.o"
 ".\objects\main.o"
 ".\objects\stm32f10x_it.o"
 ".\objects\system_stm32f10x.o"
@@ -42,6 +44,7 @@
 ".\objects\port.o"
 ".\objects\systick.o"
 ".\objects\system.o"
+".\objects\mt_flash.o"
 --library_type=microlib --strict --scatter ".\Objects\WG02.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

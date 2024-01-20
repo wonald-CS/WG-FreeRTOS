@@ -20,7 +20,7 @@ void Key_Task(void *pvParameters)
   xEventGroupClearBits(KeyEvent,EVENT_ALL_BITS);
   for(;;)
   {
-    Ret = tick_check(Tick,5000);
+    Ret = tick_check(Tick,4000);
     if (Ret)
     {
       Tick = xTaskGetTickCount();

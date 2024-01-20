@@ -43,7 +43,7 @@ int main(void)
 				(UBaseType_t    )TASK_PRIORITY_LED,   //任务优先级
 				(TaskHandle_t*  )&LedTask_Handle);    //任务句柄    
 
-	xTaskCreate(Key_Task, "Key_Task", 200, NULL, TASK_PRIORITY_KEY, &KeyTask_Handle);   
+	xTaskCreate(Key_Task, "Key_Task", (1024*4), NULL, TASK_PRIORITY_KEY, &KeyTask_Handle);   
 
 
 	vTaskStartScheduler();   

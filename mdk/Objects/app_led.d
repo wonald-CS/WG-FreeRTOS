@@ -46,3 +46,4 @@
 .\objects\app_led.o: ..\FreeRTOS\include\timers.h
 .\objects\app_led.o: ..\FreeRTOS\include\queue.h
 .\objects\app_led.o: ..\App\app_led.h
+.\objects\app_led.o: ..\Hal\hal_GPIO.h
