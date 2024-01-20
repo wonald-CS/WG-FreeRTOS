@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "systick.h": "c",
+        "app_key.h": "c",
+        "queue.h": "c",
+        "system.h": "c",
+        "freertos.h": "c",
+        "freertosconfig.h": "c"
+    }
+}
