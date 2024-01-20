@@ -29,6 +29,7 @@ typedef enum
     //≈≈–Ú”≈œ»º∂
     TASK_PRIORITY_LED,
     TASK_PRIORITY_KEY,
+    TASK_PRIORITY_TFTLCD,
 	
 }TASK_PRIORITY_DEFINE;
 

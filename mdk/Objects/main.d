@@ -48,3 +48,4 @@
 .\objects\main.o: ..\Hal\hal_init.h
 .\objects\main.o: ..\App\app_led.h
 .\objects\main.o: ..\App\app_key.h
+.\objects\main.o: ..\App\app_tftlcd.h

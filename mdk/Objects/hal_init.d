@@ -4,3 +4,4 @@
 .\objects\hal_init.o: ..\Hal\hal_init.h
 .\objects\hal_init.o: ..\Hal\hal_GPIO.h
 .\objects\hal_init.o: ..\Hal\hal_flash.h
+.\objects\hal_init.o: ..\Hal\hal_tftlcd.h

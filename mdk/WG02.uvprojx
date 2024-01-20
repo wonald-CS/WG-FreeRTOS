@@ -408,6 +408,11 @@
               <FileType>1</FileType>
               <FilePath>..\Hal\hal_flash.c</FilePath>
             </File>
+            <File>
+              <FileName>hal_tftlcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hal\hal_tftlcd.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -442,6 +447,11 @@
               <FileName>app_key.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\App\app_key.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_tftlcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\App\app_tftlcd.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -655,6 +665,11 @@
               <FileName>mt_flash.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Mt\mt_flash.c</FilePath>
+            </File>
+            <File>
+              <FileName>mt_tftlcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Mt\mt_tftlcd.c</FilePath>
             </File>
           </Files>
         </Group>

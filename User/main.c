@@ -7,6 +7,7 @@
 #include "hal_init.h"
 #include "app_led.h"
 #include "app_key.h"
+#include "app_tftlcd.h"
 
 
 /*
@@ -18,7 +19,7 @@ int fputc( int ch, FILE *f );
 //任务句柄
 TaskHandle_t LedTask_Handle;
 TaskHandle_t KeyTask_Handle;
-
+TaskHandle_t TftLcd_Task_Handle;
 
 
 int main(void)
@@ -43,7 +44,8 @@ int main(void)
 				(UBaseType_t    )TASK_PRIORITY_LED,   //任务优先级
 				(TaskHandle_t*  )&LedTask_Handle);    //任务句柄    
 
-	xTaskCreate(Key_Task, "Key_Task", (1024*4), NULL, TASK_PRIORITY_KEY, &KeyTask_Handle);   
+	xTaskCreate(Key_Task, "Key_Task", 1024, NULL, TASK_PRIORITY_KEY, &KeyTask_Handle);   
+	xTaskCreate(TftLcd_Task, "TftLcd_Task", 1024, NULL, TASK_PRIORITY_TFTLCD, &TftLcd_Task_Handle);   
 
 
 	vTaskStartScheduler();   

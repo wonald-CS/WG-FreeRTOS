@@ -2,6 +2,8 @@
     "files.associations": {
         "hal_flash.h": "c",
         "systick.h": "c",
-        "mt_flash.h": "c"
+        "mt_flash.h": "c",
+        "hal_tftlcd.h": "c",
+        "hal_usart.h": "c"
     }
 }
