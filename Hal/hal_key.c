@@ -185,14 +185,12 @@ void hal_Key_Init(void)
 void hal_Key_Proc(void)
 {
 	unsigned char i,keys;
-	unsigned char state;
 	
     hal_Key_DBGet_Sta();
 	
 	for(i=0; i<KEYNUM; i++)
 	{	
 		keys = 0xff; 
-		state = 0;
 		switch(KeyState[i])
 		{
 			case KEY_PRESSWAIT:
