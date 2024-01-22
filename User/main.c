@@ -32,13 +32,6 @@ int main(void)
 	SysTick_Init(72);//系统时钟
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_4);//设置系统中断优先级分组4
 	Hal_Init();	//硬件初始化
-
-
-	//队列初始化
-	KeyQueue = xQueueCreate(10, sizeof(uint16_t));
-	//事件初始化
-	KeyEvent = xEventGroupCreate();
-
 	
 	//创建开始任务
 	xTaskCreate((TaskFunction_t )Led_Task,            			//任务函数

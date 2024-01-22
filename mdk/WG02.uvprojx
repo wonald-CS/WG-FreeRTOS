@@ -428,6 +428,11 @@
               <FileType>1</FileType>
               <FilePath>..\Hal\hal_al6630.c</FilePath>
             </File>
+            <File>
+              <FileName>hal_key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hal\hal_key.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

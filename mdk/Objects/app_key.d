@@ -46,3 +46,7 @@
 .\objects\app_key.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\app_key.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\objects\app_key.o: ..\Public\SysTick.h
+.\objects\app_key.o: ..\Hal\hal_key.h
+.\objects\app_key.o: ..\Hal\hal_wtn6.h
+.\objects\app_key.o: ..\mt\mt_tftlcd.h
+.\objects\app_key.o: ..\App\app_tftlcd.h

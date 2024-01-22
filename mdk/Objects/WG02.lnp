@@ -8,6 +8,7 @@
 ".\objects\hal_wtn6.o"
 ".\objects\hal_timer.o"
 ".\objects\hal_al6630.o"
+".\objects\hal_key.o"
 ".\objects\main.o"
 ".\objects\stm32f10x_it.o"
 ".\objects\system_stm32f10x.o"

@@ -8,6 +8,8 @@
         "hal_wtn6.h": "c",
         "event_groups.h": "c",
         "app_key.h": "c",
-        "freertos.h": "c"
+        "freertos.h": "c",
+        "hal_key.h": "c",
+        "task.h": "c"
     }
 }
