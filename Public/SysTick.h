@@ -14,7 +14,7 @@
 //大小对齐
 #define ALIGN(size,align)	(((size) + (align) - 1) & ~((align) - 1))
 //计算实际需要申请的栈空间
-#define GET_TASK_STACK_SIZE(size)  (ALIGN(size,sizeof(StackType_t) / sizeof(StackType_t))
+#define GET_TASK_STACK_SIZE(size)  (ALIGN(size,sizeof(StackType_t) / sizeof(StackType_t)))
 //时间(ms)转换tick数
 #define MS_TO_TICK(ms)		(ms/portTICK_PERIOD_MS)
 
@@ -28,8 +28,10 @@ typedef enum
 {
     //排序优先级
     TASK_PRIORITY_LED,
+    TASK_PRIORITY_TEMHUM,
     TASK_PRIORITY_KEY,
     TASK_PRIORITY_TFTLCD,
+    
 	
 }TASK_PRIORITY_DEFINE;
 

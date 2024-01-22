@@ -37,7 +37,6 @@ void Hal_Usart_Init(void)
 	
 	USART_Cmd(USART1, ENABLE);
 
-	USART_DMACmd(USART1,USART_DMAReq_Tx,ENABLE);
 }
 
 

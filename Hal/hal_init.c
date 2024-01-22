@@ -4,6 +4,9 @@
 #include "hal_GPIO.h"
 #include "hal_flash.h"
 #include "hal_tftlcd.h"
+#include "hal_wTn6.h"
+#include "hal_timer.h"
+#include "hal_al6630.h"
 
 
 
@@ -15,4 +18,7 @@ void Hal_Init(void)
 	hal_spi2Init();
 	hal_tftlcd_Init();
 	LCD_Open_Init();
+	hal_Wtn6_Init();
+	hal_timer_Init();
+	hal_Al6630_Init();
 }

@@ -8,6 +8,7 @@
 #include "app_led.h"
 #include "app_key.h"
 #include "app_tftlcd.h"
+#include "app_al6630.h"
 
 
 /*
@@ -20,6 +21,7 @@ int fputc( int ch, FILE *f );
 TaskHandle_t LedTask_Handle;
 TaskHandle_t KeyTask_Handle;
 TaskHandle_t TftLcd_Task_Handle;
+TaskHandle_t TemHum_Task_Handle;
 
 
 int main(void)
@@ -37,15 +39,17 @@ int main(void)
 
 	
 	//创建开始任务
-	xTaskCreate((TaskFunction_t )Led_Task,            //任务函数
-				(const char*    )"Led_Task",          //任务名称
-				(uint16_t       )50,        		  //任务堆栈大小
-				(void*          )NULL,                //传递给任务函数的参数
-				(UBaseType_t    )TASK_PRIORITY_LED,   //任务优先级
-				(TaskHandle_t*  )&LedTask_Handle);    //任务句柄    
+	xTaskCreate((TaskFunction_t )Led_Task,            			//任务函数
+				(const char*    )"Led_Task",          			//任务名称
+				(uint16_t       )GET_TASK_STACK_SIZE(50),       //任务堆栈大小
+				(void*          )NULL,                			//传递给任务函数的参数
+				(UBaseType_t    )TASK_PRIORITY_LED,   			//任务优先级
+				(TaskHandle_t*  )&LedTask_Handle);    			//任务句柄   
+				 
 
-	xTaskCreate(Key_Task, "Key_Task", 1024, NULL, TASK_PRIORITY_KEY, &KeyTask_Handle);   
-	xTaskCreate(TftLcd_Task, "TftLcd_Task", 1024, NULL, TASK_PRIORITY_TFTLCD, &TftLcd_Task_Handle);   
+	xTaskCreate(Key_Task, "Key_Task", GET_TASK_STACK_SIZE(500), NULL, TASK_PRIORITY_KEY, &KeyTask_Handle);   
+	xTaskCreate(TftLcd_Task, "TftLcd_Task", GET_TASK_STACK_SIZE(500), NULL, TASK_PRIORITY_TFTLCD, &TftLcd_Task_Handle);   
+	xTaskCreate(TemHum_Task, "TemHum_Task", GET_TASK_STACK_SIZE(500), NULL, TASK_PRIORITY_TFTLCD, &TemHum_Task_Handle);  
 
 
 	vTaskStartScheduler();   

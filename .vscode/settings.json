@@ -4,6 +4,10 @@
         "systick.h": "c",
         "mt_flash.h": "c",
         "hal_tftlcd.h": "c",
-        "hal_usart.h": "c"
+        "hal_usart.h": "c",
+        "hal_wtn6.h": "c",
+        "event_groups.h": "c",
+        "app_key.h": "c",
+        "freertos.h": "c"
     }
 }

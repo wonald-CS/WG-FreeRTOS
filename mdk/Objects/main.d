@@ -49,3 +49,4 @@
 .\objects\main.o: ..\App\app_led.h
 .\objects\main.o: ..\App\app_key.h
 .\objects\main.o: ..\App\app_tftlcd.h
+.\objects\main.o: ..\App\app_al6630.h

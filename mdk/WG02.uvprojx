@@ -413,6 +413,21 @@
               <FileType>1</FileType>
               <FilePath>..\Hal\hal_tftlcd.c</FilePath>
             </File>
+            <File>
+              <FileName>hal_wtn6.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hal\hal_wtn6.c</FilePath>
+            </File>
+            <File>
+              <FileName>hal_timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hal\hal_timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>hal_al6630.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hal\hal_al6630.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -452,6 +467,11 @@
               <FileName>app_tftlcd.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\App\app_tftlcd.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_al6630.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\App\app_al6630.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -655,6 +675,11 @@
               <FileName>system.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Public\system.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcdfont.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Public\lcdfont.c</FilePath>
             </File>
           </Files>
         </Group>

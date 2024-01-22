@@ -31,6 +31,26 @@
 #define LGRAYBLUE        0XA651 //浅灰蓝色(中间层颜色)
 #define LBBLUE           0X2B12 //浅棕蓝色(选择条目的反色)
 
+
+#define COOR_ICON_AC_X   1
+#define COOR_ICON_AC_Y   1
+
+#define COOR_ICON_BAT_X   33
+#define COOR_ICON_BAT_Y   1
+
+#define  COOR_ICON_SERVER_X   210
+#define  COOR_ICON_SERVER_Y    1
+
+#define  COOR_ICON_WIFI_X   250
+#define  COOR_ICON_WIFI_Y    1
+
+#define  COOR_ICON_SIM_X   282
+#define  COOR_ICON_SIM_Y    1
+
+#define  COOR_ICON_SYSTEMODE_X   70
+#define  COOR_ICON_SYSTEMODE_Y   100
+
+
 enum
 {
 	FORTSIZE_12 = 12,

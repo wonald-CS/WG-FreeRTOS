@@ -1,6 +1,7 @@
 .\objects\app_tftlcd.o: ..\App\app_tftlcd.c
 .\objects\app_tftlcd.o: ..\App\app_tftlcd.h
 .\objects\app_tftlcd.o: ..\mt\mt_tftlcd.h
+.\objects\app_tftlcd.o: ..\Public\lcdfont.h
 .\objects\app_tftlcd.o: E:\keep going\Keil\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\app_tftlcd.o: ..\FreeRTOS\include\FreeRTOS.h
 .\objects\app_tftlcd.o: E:\keep going\Keil\ARM\ARMCC\Bin\..\include\stddef.h

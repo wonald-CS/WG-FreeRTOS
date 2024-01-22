@@ -5,3 +5,6 @@
 .\objects\hal_init.o: ..\Hal\hal_GPIO.h
 .\objects\hal_init.o: ..\Hal\hal_flash.h
 .\objects\hal_init.o: ..\Hal\hal_tftlcd.h
+.\objects\hal_init.o: ..\Hal\hal_wTn6.h
+.\objects\hal_init.o: ..\Hal\hal_timer.h
+.\objects\hal_init.o: ..\Hal\hal_al6630.h
