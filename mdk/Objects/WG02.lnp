@@ -51,6 +51,7 @@
 ".\objects\systick.o"
 ".\objects\system.o"
 ".\objects\lcdfont.o"
+".\objects\test.o"
 ".\objects\mt_flash.o"
 ".\objects\mt_tftlcd.o"
 --library_type=microlib --strict --scatter ".\Objects\WG02.sct"

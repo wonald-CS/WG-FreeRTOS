@@ -13,21 +13,13 @@ QueueHandle_t KeyQueue;
 EventGroupHandle_t KeyEvent;
 
 
-
+//评估发现按键值只用队列即可完成功能，不过可以加上事件组来做（熟悉用法）
 void Key_Task(void *pvParameters)
 {	
-  uint8_t Ret;
-  static uint32_t Tick;
-  xEventGroupClearBits(KeyEvent,EVENT_ALL_BITS);
-  for(;;)
-  {
-    Ret = tick_check(Tick,4000);
-    if (Ret)
-    {
-      Tick = xTaskGetTickCount();
-     	printf("HeartBeat!!!\r\n");
-    }
-    
-    vTaskDelay(100);
-  }
+	xEventGroupClearBits(KeyEvent,EVENT_ALL_BITS);
+	for(;;)
+	{
+
+		vTaskDelay(100);
+	}
 }

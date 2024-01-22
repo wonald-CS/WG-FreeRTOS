@@ -23,7 +23,7 @@ void TemperatureValue_Show(void)
     displayBuf[idx ++] = TemperatureValue%100/10 +'0';
     displayBuf[idx ++] = '.';
     displayBuf[idx ++] = TemperatureValue%10 +'0';
-    displayBuf[idx ++] = 'C';  
+    displayBuf[idx ++] = '!';  
     displayBuf[idx ++] = 0;	
     LCD_ShowString(70,3,displayBuf,HUE_LCD_FONT,HUE_LCD_BACK,24,0);
 }

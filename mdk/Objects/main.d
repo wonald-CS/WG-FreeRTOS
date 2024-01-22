@@ -46,6 +46,7 @@
 .\objects\main.o: ..\FreeRTOS\include\timers.h
 .\objects\main.o: ..\FreeRTOS\include\queue.h
 .\objects\main.o: ..\Hal\hal_init.h
+.\objects\main.o: ..\Public\Test.h
 .\objects\main.o: ..\App\app_led.h
 .\objects\main.o: ..\App\app_key.h
 .\objects\main.o: ..\App\app_tftlcd.h

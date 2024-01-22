@@ -681,6 +681,11 @@
               <FileType>1</FileType>
               <FilePath>..\Public\lcdfont.c</FilePath>
             </File>
+            <File>
+              <FileName>Test.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Public\Test.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

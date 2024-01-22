@@ -5,6 +5,7 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include "hal_init.h"
+#include "Test.h"
 #include "app_led.h"
 #include "app_key.h"
 #include "app_tftlcd.h"
@@ -22,6 +23,7 @@ TaskHandle_t LedTask_Handle;
 TaskHandle_t KeyTask_Handle;
 TaskHandle_t TftLcd_Task_Handle;
 TaskHandle_t TemHum_Task_Handle;
+TaskHandle_t Test_Task_Handle;
 
 
 int main(void)
@@ -47,9 +49,10 @@ int main(void)
 				(TaskHandle_t*  )&LedTask_Handle);    			//ÈÎÎñ¾ä±ú   
 				 
 
-	xTaskCreate(Key_Task, "Key_Task", GET_TASK_STACK_SIZE(500), NULL, TASK_PRIORITY_KEY, &KeyTask_Handle);   
-	xTaskCreate(TftLcd_Task, "TftLcd_Task", GET_TASK_STACK_SIZE(500), NULL, TASK_PRIORITY_TFTLCD, &TftLcd_Task_Handle);   
-	xTaskCreate(TemHum_Task, "TemHum_Task", GET_TASK_STACK_SIZE(500), NULL, TASK_PRIORITY_TFTLCD, &TemHum_Task_Handle);  
+	xTaskCreate(Key_Task, "Key_Task", GET_TASK_STACK_SIZE(200), NULL, TASK_PRIORITY_KEY, &KeyTask_Handle);   
+	xTaskCreate(TftLcd_Task, "TftLcd_Task", GET_TASK_STACK_SIZE(300), NULL, TASK_PRIORITY_TFTLCD, &TftLcd_Task_Handle);   
+	xTaskCreate(TemHum_Task, "TemHum_Task", GET_TASK_STACK_SIZE(200), NULL, TASK_PRIORITY_TEMHUM, &TemHum_Task_Handle);  
+	xTaskCreate(Test_Task, "Test_Task", GET_TASK_STACK_SIZE(1024), NULL, TASK_PRIORITY_TEST, &TemHum_Task_Handle);  
 
 
 	vTaskStartScheduler();   
