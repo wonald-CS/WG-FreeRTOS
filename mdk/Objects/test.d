@@ -47,3 +47,4 @@
 .\objects\test.o: ..\FreeRTOS\include\queue.h
 .\objects\test.o: ..\Public\Test.h
 .\objects\test.o: ..\Hal\hal_usart.h
+.\objects\test.o: ..\FreeRTOS\include\semphr.h

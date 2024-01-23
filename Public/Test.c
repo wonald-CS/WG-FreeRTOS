@@ -7,6 +7,7 @@
 #include "event_groups.h"
 #include "queue.h"
 #include "hal_usart.h"
+#include "semphr.h"
 
 
 typedef struct{
@@ -38,6 +39,8 @@ void Test_Task(void *pvParameters)
 	Test_Str.RET = 3;
 	Test_Pra Test_Rx;
 	StrTxQueue = xQueueCreate(1, sizeof(Test_Pra));
+
+	SemaphoreHandle_t Test_Mutex = xSemaphoreCreateMutex();
 	
 	while(1)
 	{
@@ -57,20 +60,25 @@ void Test_Task(void *pvParameters)
 //		Ret = tick_check(TestTick,MS_TO_TICK(5000));
 //		if(Ret){
 //			TestTick = xTaskGetTickCount();
-			if(!TestTick)
+			if(xQueueSemaphoreTake(Test_Mutex,portMAX_DELAY))
 			{
-				TestTick = 1;
-				if(xQueueSend(USART3TxQueue, &TX_Buff, portMAX_DELAY))
+				if(!TestTick)
 				{
-					if(xQueueReceive(USART3TxQueue, RX_Buff, portMAX_DELAY))
+					TestTick = 1;
+					if(xQueueSend(USART3TxQueue, &TX_Buff, portMAX_DELAY))
 					{
-						printf("队列传入数组的应用： \r\n");
-						for(i=0;i<4;i++){
-							printf("RX_Buff[%d]:%c\r\n",i,RX_Buff[i]);
+						if(xQueueReceive(USART3TxQueue, RX_Buff, portMAX_DELAY))
+						{
+							printf("队列传入数组的应用： \r\n");
+							for(i=0;i<4;i++){
+								printf("RX_Buff[%d]:%c\r\n",i,RX_Buff[i]);
+							}
 						}
 					}
 				}
+				xSemaphoreGive(Test_Mutex);
 			}
+
 
 //		}
 			
