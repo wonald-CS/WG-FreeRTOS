@@ -2,15 +2,8 @@
 #include "hal_tftlcd.h"
 #include "lcdfont.h"
 
-static void hal_tftlcd_Delay(unsigned int de);
+
 unsigned char ColorBuf[640];
-
-static void hal_tftlcd_Delay(unsigned int de)
-{
-	while(de--);
-}
-
-
 
 
 

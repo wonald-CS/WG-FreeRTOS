@@ -51,3 +51,4 @@
 .\objects\main.o: ..\App\app_key.h
 .\objects\main.o: ..\App\app_tftlcd.h
 .\objects\main.o: ..\App\app_al6630.h
+.\objects\main.o: ..\App\app_wifi.h

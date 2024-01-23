@@ -30,23 +30,50 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x65ADDC62)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x65ADDC62)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x65ADDC62)
 I (..\Hal\hal_led.h)(0x65ADDC62)
-F (..\Hal\hal_init.c)(0x65AE225C)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\mdk -I ..\App -I ..\Hal -I ..\Libraries\CMSIS\CM3\CoreSupport -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\mt -I ..\User -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\Public-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="533" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o .\objects\hal_init.o --omf_browse .\objects\hal_init.crf --depend .\objects\hal_init.d)
+F (..\Hal\hal_init.c)(0x65AF2D8E)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\mdk -I ..\App -I ..\Hal -I ..\Libraries\CMSIS\CM3\CoreSupport -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\mt -I ..\User -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\Public-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="533" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o .\objects\hal_init.o --omf_browse .\objects\hal_init.crf --depend .\objects\hal_init.d)
 I (..\Hal\hal_led.h)(0x65ADDC62)
-I (..\Hal\hal_usart.h)(0x65ADDC62)
+I (..\Hal\hal_usart.h)(0x65AF66BA)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x65ADDC62)
+I (E:\keep going\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (E:\keep going\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE4AE0)
+I (..\FreeRTOS\include\projdefs.h)(0x65ADDC62)
+I (..\FreeRTOS\include\portable.h)(0x65ADDC62)
+I (..\FreeRTOS\include\deprecated_definitions.h)(0x65ADDC62)
+I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x65ADDC62)
+I (..\FreeRTOS\include\mpu_wrappers.h)(0x65ADDC62)
+I (..\FreeRTOS\include\task.h)(0x65AE4A72)
+I (..\FreeRTOS\include\list.h)(0x65ADDC62)
+I (..\FreeRTOS\include\event_groups.h)(0x65ADDC62)
+I (..\FreeRTOS\include\timers.h)(0x65ADDC62)
+I (..\FreeRTOS\include\queue.h)(0x65ADDC62)
 I (..\Hal\hal_init.h)(0x65ADDC62)
-I (..\Hal\hal_GPIO.h)(0x65ADDC62)
+I (..\Hal\hal_GPIO.h)(0x65AF689B)
 I (..\Hal\hal_flash.h)(0x65ADDC62)
 I (..\Hal\hal_tftlcd.h)(0x65ADDC62)
 I (..\Hal\hal_wTn6.h)(0x65ADDC62)
 I (..\Hal\hal_timer.h)(0x65ADDC62)
 I (..\Hal\hal_al6630.h)(0x65ADDC62)
 I (..\Hal\hal_key.h)(0x65AE2CCB)
-F (..\Hal\hal_usart.c)(0x65ADDC62)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\mdk -I ..\App -I ..\Hal -I ..\Libraries\CMSIS\CM3\CoreSupport -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\mt -I ..\User -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\Public-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="533" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o .\objects\hal_usart.o --omf_browse .\objects\hal_usart.crf --depend .\objects\hal_usart.d)
-I (..\Hal\hal_usart.h)(0x65ADDC62)
+F (..\Hal\hal_usart.c)(0x65AF81DA)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\mdk -I ..\App -I ..\Hal -I ..\Libraries\CMSIS\CM3\CoreSupport -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\mt -I ..\User -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\Public-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="533" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o .\objects\hal_usart.o --omf_browse .\objects\hal_usart.crf --depend .\objects\hal_usart.d)
+I (..\Hal\hal_usart.h)(0x65AF66BA)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x65ADDC62)
+I (E:\keep going\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (E:\keep going\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE4AE0)
+I (..\FreeRTOS\include\projdefs.h)(0x65ADDC62)
+I (..\FreeRTOS\include\portable.h)(0x65ADDC62)
+I (..\FreeRTOS\include\deprecated_definitions.h)(0x65ADDC62)
+I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x65ADDC62)
+I (..\FreeRTOS\include\mpu_wrappers.h)(0x65ADDC62)
+I (..\FreeRTOS\include\task.h)(0x65AE4A72)
+I (..\FreeRTOS\include\list.h)(0x65ADDC62)
+I (..\FreeRTOS\include\event_groups.h)(0x65ADDC62)
+I (..\FreeRTOS\include\timers.h)(0x65ADDC62)
+I (..\FreeRTOS\include\queue.h)(0x65ADDC62)
 I (E:\keep going\Keil\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32F10x.h)(0x53BA0D60)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x65ADDC62)
-I (E:\keep going\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
 I (E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include\system_stm32f10x.h)(0x4F1E2E3C)
 I (..\User\stm32f10x_conf.h)(0x65ADDC62)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x65ADDC62)
@@ -73,7 +100,9 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x65ADDC62)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x65ADDC62)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x65ADDC62)
 I (E:\keep going\Keil\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
-F (..\Hal\hal_Gpio.c)(0x65ADDC62)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\mdk -I ..\App -I ..\Hal -I ..\Libraries\CMSIS\CM3\CoreSupport -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\mt -I ..\User -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\Public-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="533" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o .\objects\hal_gpio.o --omf_browse .\objects\hal_gpio.crf --depend .\objects\hal_gpio.d)
+I (..\Public\SysTick.h)(0x65AF5C20)
+I (..\Public\system.h)(0x65ADDC62)
+F (..\Hal\hal_Gpio.c)(0x65AF689E)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\mdk -I ..\App -I ..\Hal -I ..\Libraries\CMSIS\CM3\CoreSupport -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\mt -I ..\User -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\Public-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="533" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o .\objects\hal_gpio.o --omf_browse .\objects\hal_gpio.crf --depend .\objects\hal_gpio.d)
 I (E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32F10x.h)(0x53BA0D60)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x65ADDC62)
 I (E:\keep going\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
@@ -102,7 +131,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x65ADDC62)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x65ADDC62)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x65ADDC62)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x65ADDC62)
-I (..\Hal\hal_GPIO.H)(0x65ADDC62)
+I (..\Hal\hal_GPIO.H)(0x65AF689B)
 F (..\Hal\hal_flash.c)(0x65ADDC62)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\mdk -I ..\App -I ..\Hal -I ..\Libraries\CMSIS\CM3\CoreSupport -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\mt -I ..\User -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\Public-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="533" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o .\objects\hal_flash.o --omf_browse .\objects\hal_flash.crf --depend .\objects\hal_flash.d)
 I (E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32F10x.h)(0x53BA0D60)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x65ADDC62)
@@ -166,7 +195,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x65ADDC62)
 F (..\Hal\hal_wtn6.c)(0x65ADDC62)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\mdk -I ..\App -I ..\Hal -I ..\Libraries\CMSIS\CM3\CoreSupport -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\mt -I ..\User -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\Public-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="533" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o .\objects\hal_wtn6.o --omf_browse .\objects\hal_wtn6.crf --depend .\objects\hal_wtn6.d)
 I (..\Hal\hal_wtn6.h)(0x65ADDC62)
 I (..\Hal\hal_timer.h)(0x65ADDC62)
-I (..\Public\SysTick.h)(0x65AE1B1E)
+I (..\Public\SysTick.h)(0x65AF5C20)
 I (..\Public\system.h)(0x65ADDC62)
 I (E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA0D60)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x65ADDC62)
@@ -198,13 +227,13 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x65ADDC62)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x65ADDC62)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x65ADDC62)
 I (E:\keep going\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE45AC)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE4AE0)
 I (..\FreeRTOS\include\projdefs.h)(0x65ADDC62)
 I (..\FreeRTOS\include\portable.h)(0x65ADDC62)
 I (..\FreeRTOS\include\deprecated_definitions.h)(0x65ADDC62)
 I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x65ADDC62)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x65ADDC62)
-I (..\FreeRTOS\include\task.h)(0x65ADDC62)
+I (..\FreeRTOS\include\task.h)(0x65AE4A72)
 I (..\FreeRTOS\include\list.h)(0x65ADDC62)
 I (..\FreeRTOS\include\event_groups.h)(0x65ADDC62)
 I (..\FreeRTOS\include\timers.h)(0x65ADDC62)
@@ -278,13 +307,13 @@ I (..\App\app_key.h)(0x65AE2EFB)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x65ADDC62)
 I (E:\keep going\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (E:\keep going\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE45AC)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE4AE0)
 I (..\FreeRTOS\include\projdefs.h)(0x65ADDC62)
 I (..\FreeRTOS\include\portable.h)(0x65ADDC62)
 I (..\FreeRTOS\include\deprecated_definitions.h)(0x65ADDC62)
 I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x65ADDC62)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x65ADDC62)
-I (..\FreeRTOS\include\task.h)(0x65ADDC62)
+I (..\FreeRTOS\include\task.h)(0x65AE4A72)
 I (..\FreeRTOS\include\list.h)(0x65ADDC62)
 I (..\FreeRTOS\include\event_groups.h)(0x65ADDC62)
 I (..\FreeRTOS\include\timers.h)(0x65ADDC62)
@@ -317,9 +346,9 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x65ADDC62)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x65ADDC62)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x65ADDC62)
 I (E:\keep going\Keil\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
-I (..\Public\SysTick.h)(0x65AE1B1E)
+I (..\Public\SysTick.h)(0x65AF5C20)
 I (..\Public\system.h)(0x65ADDC62)
-F (..\User\main.c)(0x65AE2B7B)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\mdk -I ..\App -I ..\Hal -I ..\Libraries\CMSIS\CM3\CoreSupport -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\mt -I ..\User -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\Public-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="533" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (..\User\main.c)(0x65AF7994)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\mdk -I ..\App -I ..\Hal -I ..\Libraries\CMSIS\CM3\CoreSupport -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\mt -I ..\User -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\Public-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="533" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (E:\keep going\Keil\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA0D60)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x65ADDC62)
@@ -350,16 +379,16 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x65ADDC62)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x65ADDC62)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x65ADDC62)
 I (..\Public\system.h)(0x65ADDC62)
-I (..\Public\SysTick.h)(0x65AE1B1E)
+I (..\Public\SysTick.h)(0x65AF5C20)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x65ADDC62)
 I (E:\keep going\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE45AC)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE4AE0)
 I (..\FreeRTOS\include\projdefs.h)(0x65ADDC62)
 I (..\FreeRTOS\include\portable.h)(0x65ADDC62)
 I (..\FreeRTOS\include\deprecated_definitions.h)(0x65ADDC62)
 I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x65ADDC62)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x65ADDC62)
-I (..\FreeRTOS\include\task.h)(0x65ADDC62)
+I (..\FreeRTOS\include\task.h)(0x65AE4A72)
 I (..\FreeRTOS\include\list.h)(0x65ADDC62)
 I (..\FreeRTOS\include\event_groups.h)(0x65ADDC62)
 I (..\FreeRTOS\include\timers.h)(0x65ADDC62)
@@ -370,6 +399,7 @@ I (..\App\app_led.h)(0x65ADDC62)
 I (..\App\app_key.h)(0x65AE2EFB)
 I (..\App\app_tftlcd.h)(0x65AE30E5)
 I (..\App\app_al6630.h)(0x65ADDC62)
+I (..\App\app_wifi.h)(0x65AF5C0B)
 F (..\User\stm32f10x_it.c)(0x65ADDC62)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\mdk -I ..\App -I ..\Hal -I ..\Libraries\CMSIS\CM3\CoreSupport -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\mt -I ..\User -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\Public-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="533" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f10x_it.o --omf_browse .\objects\stm32f10x_it.crf --depend .\objects\stm32f10x_it.d)
 I (..\User\stm32f10x_it.h)(0x65ADDC62)
 I (E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA0D60)
@@ -402,13 +432,13 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x65ADDC62)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x65ADDC62)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x65ADDC62)
 I (E:\keep going\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE45AC)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE4AE0)
 I (..\FreeRTOS\include\projdefs.h)(0x65ADDC62)
 I (..\FreeRTOS\include\portable.h)(0x65ADDC62)
 I (..\FreeRTOS\include\deprecated_definitions.h)(0x65ADDC62)
 I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x65ADDC62)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x65ADDC62)
-I (..\FreeRTOS\include\task.h)(0x65ADDC62)
+I (..\FreeRTOS\include\task.h)(0x65AE4A72)
 I (..\FreeRTOS\include\list.h)(0x65ADDC62)
 F (..\User\system_stm32f10x.c)(0x65ADDC62)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\mdk -I ..\App -I ..\Hal -I ..\Libraries\CMSIS\CM3\CoreSupport -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\mt -I ..\User -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\Public-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="533" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o .\objects\system_stm32f10x.o --omf_browse .\objects\system_stm32f10x.crf --depend .\objects\system_stm32f10x.d)
 I (E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA0D60)
@@ -441,7 +471,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x65ADDC62)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x65ADDC62)
 F (..\App\app_led.c)(0x65ADDC62)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\mdk -I ..\App -I ..\Hal -I ..\Libraries\CMSIS\CM3\CoreSupport -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\mt -I ..\User -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\Public-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="533" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o .\objects\app_led.o --omf_browse .\objects\app_led.crf --depend .\objects\app_led.d)
 I (..\Hal\hal_led.h)(0x65ADDC62)
-I (..\Public\SysTick.h)(0x65AE1B1E)
+I (..\Public\SysTick.h)(0x65AF5C20)
 I (..\Public\system.h)(0x65ADDC62)
 I (E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA0D60)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x65ADDC62)
@@ -473,37 +503,37 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x65ADDC62)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x65ADDC62)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x65ADDC62)
 I (E:\keep going\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE45AC)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE4AE0)
 I (..\FreeRTOS\include\projdefs.h)(0x65ADDC62)
 I (..\FreeRTOS\include\portable.h)(0x65ADDC62)
 I (..\FreeRTOS\include\deprecated_definitions.h)(0x65ADDC62)
 I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x65ADDC62)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x65ADDC62)
-I (..\FreeRTOS\include\task.h)(0x65ADDC62)
+I (..\FreeRTOS\include\task.h)(0x65AE4A72)
 I (..\FreeRTOS\include\list.h)(0x65ADDC62)
 I (..\FreeRTOS\include\event_groups.h)(0x65ADDC62)
 I (..\FreeRTOS\include\timers.h)(0x65ADDC62)
 I (..\FreeRTOS\include\queue.h)(0x65ADDC62)
 I (..\App\app_led.h)(0x65ADDC62)
-I (..\Hal\hal_GPIO.h)(0x65ADDC62)
+I (..\Hal\hal_GPIO.h)(0x65AF689B)
 F (..\App\app_key.c)(0x65AE3498)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\mdk -I ..\App -I ..\Hal -I ..\Libraries\CMSIS\CM3\CoreSupport -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\mt -I ..\User -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\Public-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="533" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o .\objects\app_key.o --omf_browse .\objects\app_key.crf --depend .\objects\app_key.d)
 I (E:\keep going\Keil\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (..\App\app_key.h)(0x65AE2EFB)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x65ADDC62)
 I (E:\keep going\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (E:\keep going\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE45AC)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE4AE0)
 I (..\FreeRTOS\include\projdefs.h)(0x65ADDC62)
 I (..\FreeRTOS\include\portable.h)(0x65ADDC62)
 I (..\FreeRTOS\include\deprecated_definitions.h)(0x65ADDC62)
 I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x65ADDC62)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x65ADDC62)
-I (..\FreeRTOS\include\task.h)(0x65ADDC62)
+I (..\FreeRTOS\include\task.h)(0x65AE4A72)
 I (..\FreeRTOS\include\list.h)(0x65ADDC62)
 I (..\FreeRTOS\include\event_groups.h)(0x65ADDC62)
 I (..\FreeRTOS\include\timers.h)(0x65ADDC62)
 I (..\FreeRTOS\include\queue.h)(0x65ADDC62)
-I (..\Public\SysTick.h)(0x65AE1B1E)
+I (..\Public\SysTick.h)(0x65AF5C20)
 I (..\Public\system.h)(0x65ADDC62)
 I (E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA0D60)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x65ADDC62)
@@ -544,15 +574,15 @@ I (E:\keep going\Keil\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x65ADDC62)
 I (E:\keep going\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (E:\keep going\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE45AC)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE4AE0)
 I (..\FreeRTOS\include\projdefs.h)(0x65ADDC62)
 I (..\FreeRTOS\include\portable.h)(0x65ADDC62)
 I (..\FreeRTOS\include\deprecated_definitions.h)(0x65ADDC62)
 I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x65ADDC62)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x65ADDC62)
-I (..\FreeRTOS\include\task.h)(0x65ADDC62)
+I (..\FreeRTOS\include\task.h)(0x65AE4A72)
 I (..\FreeRTOS\include\list.h)(0x65ADDC62)
-I (..\Public\SysTick.h)(0x65AE1B1E)
+I (..\Public\SysTick.h)(0x65AF5C20)
 I (..\Public\system.h)(0x65ADDC62)
 I (E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA0D60)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x65ADDC62)
@@ -593,15 +623,15 @@ I (E:\keep going\Keil\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x65ADDC62)
 I (E:\keep going\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (E:\keep going\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE45AC)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE4AE0)
 I (..\FreeRTOS\include\projdefs.h)(0x65ADDC62)
 I (..\FreeRTOS\include\portable.h)(0x65ADDC62)
 I (..\FreeRTOS\include\deprecated_definitions.h)(0x65ADDC62)
 I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x65ADDC62)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x65ADDC62)
-I (..\FreeRTOS\include\task.h)(0x65ADDC62)
+I (..\FreeRTOS\include\task.h)(0x65AE4A72)
 I (..\FreeRTOS\include\list.h)(0x65ADDC62)
-I (..\Public\SysTick.h)(0x65AE1B1E)
+I (..\Public\SysTick.h)(0x65AF5C20)
 I (..\Public\system.h)(0x65ADDC62)
 I (E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA0D60)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x65ADDC62)
@@ -633,6 +663,55 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x65ADDC62)
 I (..\FreeRTOS\include\event_groups.h)(0x65ADDC62)
 I (..\FreeRTOS\include\timers.h)(0x65ADDC62)
 I (..\FreeRTOS\include\queue.h)(0x65ADDC62)
+F (..\App\app_wifi.c)(0x65AF794C)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\mdk -I ..\App -I ..\Hal -I ..\Libraries\CMSIS\CM3\CoreSupport -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\mt -I ..\User -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\Public-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="533" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o .\objects\app_wifi.o --omf_browse .\objects\app_wifi.crf --depend .\objects\app_wifi.d)
+I (E:\keep going\Keil\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (..\App\app_wifi.h)(0x65AF5C0B)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x65ADDC62)
+I (E:\keep going\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (E:\keep going\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE4AE0)
+I (..\FreeRTOS\include\projdefs.h)(0x65ADDC62)
+I (..\FreeRTOS\include\portable.h)(0x65ADDC62)
+I (..\FreeRTOS\include\deprecated_definitions.h)(0x65ADDC62)
+I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x65ADDC62)
+I (..\FreeRTOS\include\mpu_wrappers.h)(0x65ADDC62)
+I (..\FreeRTOS\include\task.h)(0x65AE4A72)
+I (..\FreeRTOS\include\list.h)(0x65ADDC62)
+I (..\Public\SysTick.h)(0x65AF5C20)
+I (..\Public\system.h)(0x65ADDC62)
+I (E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA0D60)
+I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x65ADDC62)
+I (E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include\system_stm32f10x.h)(0x4F1E2E3C)
+I (..\User\stm32f10x_conf.h)(0x65ADDC62)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x65ADDC62)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x65ADDC62)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h)(0x65ADDC62)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_cec.h)(0x65ADDC62)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_crc.h)(0x65ADDC62)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dac.h)(0x65ADDC62)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dbgmcu.h)(0x65ADDC62)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x65ADDC62)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x65ADDC62)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x65ADDC62)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x65ADDC62)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x65ADDC62)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h)(0x65ADDC62)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x65ADDC62)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x65ADDC62)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x65ADDC62)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x65ADDC62)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x65ADDC62)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x65ADDC62)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x65ADDC62)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x65ADDC62)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x65ADDC62)
+I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x65ADDC62)
+I (..\FreeRTOS\include\event_groups.h)(0x65ADDC62)
+I (..\FreeRTOS\include\timers.h)(0x65ADDC62)
+I (..\FreeRTOS\include\queue.h)(0x65ADDC62)
+I (E:\keep going\Keil\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (..\Hal\hal_usart.h)(0x65AF66BA)
+I (..\Hal\hal_GPIO.h)(0x65AF689B)
 F (..\Startup\startup_stm32f10x_cl.s)(0x65ADDC62)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"--pd "__UVISION_VERSION SETA 533" --pd "STM32F10X_CL SETA 1"--list .\listings\startup_stm32f10x_cl.lst --xref -o .\objects\startup_stm32f10x_cl.o --depend .\objects\startup_stm32f10x_cl.d)
 F (..\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c)(0x65ADDC62)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\mdk -I ..\App -I ..\Hal -I ..\Libraries\CMSIS\CM3\CoreSupport -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\mt -I ..\User -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\Public-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="533" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o .\objects\misc.o --omf_browse .\objects\misc.crf --depend .\objects\misc.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x65ADDC62)
@@ -1307,13 +1386,13 @@ F (..\FreeRTOS\croutine.c)(0x65ADDC62)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g 
 I (..\FreeRTOS\include\FreeRTOS.h)(0x65ADDC62)
 I (E:\keep going\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (E:\keep going\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE45AC)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE4AE0)
 I (..\FreeRTOS\include\projdefs.h)(0x65ADDC62)
 I (..\FreeRTOS\include\portable.h)(0x65ADDC62)
 I (..\FreeRTOS\include\deprecated_definitions.h)(0x65ADDC62)
 I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x65ADDC62)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x65ADDC62)
-I (..\FreeRTOS\include\task.h)(0x65ADDC62)
+I (..\FreeRTOS\include\task.h)(0x65AE4A72)
 I (..\FreeRTOS\include\list.h)(0x65ADDC62)
 I (..\FreeRTOS\include\croutine.h)(0x65ADDC62)
 F (..\FreeRTOS\event_groups.c)(0x65ADDC62)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\mdk -I ..\App -I ..\Hal -I ..\Libraries\CMSIS\CM3\CoreSupport -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\mt -I ..\User -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\Public-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="533" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o .\objects\event_groups.o --omf_browse .\objects\event_groups.crf --depend .\objects\event_groups.d)
@@ -1321,13 +1400,13 @@ I (E:\keep going\Keil\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x65ADDC62)
 I (E:\keep going\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (E:\keep going\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE45AC)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE4AE0)
 I (..\FreeRTOS\include\projdefs.h)(0x65ADDC62)
 I (..\FreeRTOS\include\portable.h)(0x65ADDC62)
 I (..\FreeRTOS\include\deprecated_definitions.h)(0x65ADDC62)
 I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x65ADDC62)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x65ADDC62)
-I (..\FreeRTOS\include\task.h)(0x65ADDC62)
+I (..\FreeRTOS\include\task.h)(0x65AE4A72)
 I (..\FreeRTOS\include\list.h)(0x65ADDC62)
 I (..\FreeRTOS\include\timers.h)(0x65ADDC62)
 I (..\FreeRTOS\include\event_groups.h)(0x65ADDC62)
@@ -1336,7 +1415,7 @@ I (E:\keep going\Keil\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x65ADDC62)
 I (E:\keep going\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (E:\keep going\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE45AC)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE4AE0)
 I (..\FreeRTOS\include\projdefs.h)(0x65ADDC62)
 I (..\FreeRTOS\include\portable.h)(0x65ADDC62)
 I (..\FreeRTOS\include\deprecated_definitions.h)(0x65ADDC62)
@@ -1349,13 +1428,13 @@ I (E:\keep going\Keil\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x65ADDC62)
 I (E:\keep going\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (E:\keep going\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE45AC)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE4AE0)
 I (..\FreeRTOS\include\projdefs.h)(0x65ADDC62)
 I (..\FreeRTOS\include\portable.h)(0x65ADDC62)
 I (..\FreeRTOS\include\deprecated_definitions.h)(0x65ADDC62)
 I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x65ADDC62)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x65ADDC62)
-I (..\FreeRTOS\include\task.h)(0x65ADDC62)
+I (..\FreeRTOS\include\task.h)(0x65AE4A72)
 I (..\FreeRTOS\include\list.h)(0x65ADDC62)
 I (..\FreeRTOS\include\queue.h)(0x65ADDC62)
 F (..\FreeRTOS\tasks.c)(0x65ADDC62)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\mdk -I ..\App -I ..\Hal -I ..\Libraries\CMSIS\CM3\CoreSupport -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\mt -I ..\User -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\Public-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="533" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o .\objects\tasks.o --omf_browse .\objects\tasks.crf --depend .\objects\tasks.d)
@@ -1364,13 +1443,13 @@ I (E:\keep going\Keil\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x65ADDC62)
 I (E:\keep going\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (E:\keep going\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE45AC)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE4AE0)
 I (..\FreeRTOS\include\projdefs.h)(0x65ADDC62)
 I (..\FreeRTOS\include\portable.h)(0x65ADDC62)
 I (..\FreeRTOS\include\deprecated_definitions.h)(0x65ADDC62)
 I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x65ADDC62)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x65ADDC62)
-I (..\FreeRTOS\include\task.h)(0x65ADDC62)
+I (..\FreeRTOS\include\task.h)(0x65AE4A72)
 I (..\FreeRTOS\include\list.h)(0x65ADDC62)
 I (..\FreeRTOS\include\timers.h)(0x65ADDC62)
 I (..\FreeRTOS\include\stack_macros.h)(0x65ADDC62)
@@ -1380,13 +1459,13 @@ I (E:\keep going\Keil\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x65ADDC62)
 I (E:\keep going\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (E:\keep going\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE45AC)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE4AE0)
 I (..\FreeRTOS\include\projdefs.h)(0x65ADDC62)
 I (..\FreeRTOS\include\portable.h)(0x65ADDC62)
 I (..\FreeRTOS\include\deprecated_definitions.h)(0x65ADDC62)
 I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x65ADDC62)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x65ADDC62)
-I (..\FreeRTOS\include\task.h)(0x65ADDC62)
+I (..\FreeRTOS\include\task.h)(0x65AE4A72)
 I (..\FreeRTOS\include\list.h)(0x65ADDC62)
 I (..\FreeRTOS\include\queue.h)(0x65ADDC62)
 I (..\FreeRTOS\include\timers.h)(0x65ADDC62)
@@ -1395,28 +1474,28 @@ I (E:\keep going\Keil\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x65ADDC62)
 I (E:\keep going\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (E:\keep going\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE45AC)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE4AE0)
 I (..\FreeRTOS\include\projdefs.h)(0x65ADDC62)
 I (..\FreeRTOS\include\portable.h)(0x65ADDC62)
 I (..\FreeRTOS\include\deprecated_definitions.h)(0x65ADDC62)
 I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x65ADDC62)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x65ADDC62)
-I (..\FreeRTOS\include\task.h)(0x65ADDC62)
+I (..\FreeRTOS\include\task.h)(0x65AE4A72)
 I (..\FreeRTOS\include\list.h)(0x65ADDC62)
 F (..\FreeRTOS\portable\RVDS\ARM_CM3\port.c)(0x65ADDC62)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\mdk -I ..\App -I ..\Hal -I ..\Libraries\CMSIS\CM3\CoreSupport -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\mt -I ..\User -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\Public-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="533" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o .\objects\port.o --omf_browse .\objects\port.crf --depend .\objects\port.d)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x65ADDC62)
 I (E:\keep going\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (E:\keep going\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE45AC)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE4AE0)
 I (..\FreeRTOS\include\projdefs.h)(0x65ADDC62)
 I (..\FreeRTOS\include\portable.h)(0x65ADDC62)
 I (..\FreeRTOS\include\deprecated_definitions.h)(0x65ADDC62)
 I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x65ADDC62)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x65ADDC62)
-I (..\FreeRTOS\include\task.h)(0x65ADDC62)
+I (..\FreeRTOS\include\task.h)(0x65AE4A72)
 I (..\FreeRTOS\include\list.h)(0x65ADDC62)
 F (..\Public\SysTick.c)(0x65ADDC62)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\mdk -I ..\App -I ..\Hal -I ..\Libraries\CMSIS\CM3\CoreSupport -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\mt -I ..\User -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\Public-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="533" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
-I (..\Public\SysTick.h)(0x65AE1B1E)
+I (..\Public\SysTick.h)(0x65AF5C20)
 I (..\Public\system.h)(0x65ADDC62)
 I (E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA0D60)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x65ADDC62)
@@ -1448,13 +1527,13 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x65ADDC62)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x65ADDC62)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x65ADDC62)
 I (E:\keep going\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE45AC)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE4AE0)
 I (..\FreeRTOS\include\projdefs.h)(0x65ADDC62)
 I (..\FreeRTOS\include\portable.h)(0x65ADDC62)
 I (..\FreeRTOS\include\deprecated_definitions.h)(0x65ADDC62)
 I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x65ADDC62)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x65ADDC62)
-I (..\FreeRTOS\include\task.h)(0x65ADDC62)
+I (..\FreeRTOS\include\task.h)(0x65AE4A72)
 I (..\FreeRTOS\include\list.h)(0x65ADDC62)
 I (..\FreeRTOS\include\event_groups.h)(0x65ADDC62)
 I (..\FreeRTOS\include\timers.h)(0x65ADDC62)
@@ -1491,9 +1570,9 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x65ADDC62)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x65ADDC62)
 F (..\Public\lcdfont.c)(0x65AE1D9C)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\mdk -I ..\App -I ..\Hal -I ..\Libraries\CMSIS\CM3\CoreSupport -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\mt -I ..\User -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\Public-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="533" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o .\objects\lcdfont.o --omf_browse .\objects\lcdfont.crf --depend .\objects\lcdfont.d)
 I (..\Public\lcdfont.h)(0x65ADDC62)
-F (..\Public\Test.c)(0x65AE0B7F)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\mdk -I ..\App -I ..\Hal -I ..\Libraries\CMSIS\CM3\CoreSupport -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\mt -I ..\User -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\Public-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="533" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o .\objects\test.o --omf_browse .\objects\test.crf --depend .\objects\test.d)
+F (..\Public\Test.c)(0x65AF875E)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\mdk -I ..\App -I ..\Hal -I ..\Libraries\CMSIS\CM3\CoreSupport -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\mt -I ..\User -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\Public-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="533" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o .\objects\test.o --omf_browse .\objects\test.crf --depend .\objects\test.d)
 I (E:\keep going\Keil\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
-I (..\Public\SysTick.h)(0x65AE1B1E)
+I (..\Public\SysTick.h)(0x65AF5C20)
 I (..\Public\system.h)(0x65ADDC62)
 I (E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA0D60)
 I (..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x65ADDC62)
@@ -1525,18 +1604,19 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x65ADDC62)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x65ADDC62)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x65ADDC62)
 I (E:\keep going\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE45AC)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE4AE0)
 I (..\FreeRTOS\include\projdefs.h)(0x65ADDC62)
 I (..\FreeRTOS\include\portable.h)(0x65ADDC62)
 I (..\FreeRTOS\include\deprecated_definitions.h)(0x65ADDC62)
 I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x65ADDC62)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x65ADDC62)
-I (..\FreeRTOS\include\task.h)(0x65ADDC62)
+I (..\FreeRTOS\include\task.h)(0x65AE4A72)
 I (..\FreeRTOS\include\list.h)(0x65ADDC62)
 I (..\FreeRTOS\include\event_groups.h)(0x65ADDC62)
 I (..\FreeRTOS\include\timers.h)(0x65ADDC62)
 I (..\FreeRTOS\include\queue.h)(0x65ADDC62)
 I (..\Public\Test.h)(0x65ADE13E)
+I (..\Hal\hal_usart.h)(0x65AF66BA)
 F (..\Mt\mt_flash.c)(0x65ADDC62)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\mdk -I ..\App -I ..\Hal -I ..\Libraries\CMSIS\CM3\CoreSupport -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\mt -I ..\User -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\Public-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="533" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o .\objects\mt_flash.o --omf_browse .\objects\mt_flash.crf --depend .\objects\mt_flash.d)
 I (E:\keep going\Keil\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (..\Hal\hal_flash.h)(0x65ADDC62)
@@ -1544,15 +1624,15 @@ I (..\Mt\mt_flash.h)(0x65ADDC62)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x65ADDC62)
 I (E:\keep going\Keil\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
 I (E:\keep going\Keil\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE45AC)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x65AE4AE0)
 I (..\FreeRTOS\include\projdefs.h)(0x65ADDC62)
 I (..\FreeRTOS\include\portable.h)(0x65ADDC62)
 I (..\FreeRTOS\include\deprecated_definitions.h)(0x65ADDC62)
 I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x65ADDC62)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x65ADDC62)
-I (..\FreeRTOS\include\task.h)(0x65ADDC62)
+I (..\FreeRTOS\include\task.h)(0x65AE4A72)
 I (..\FreeRTOS\include\list.h)(0x65ADDC62)
-F (..\Mt\mt_tftlcd.c)(0x65ADDC62)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\mdk -I ..\App -I ..\Hal -I ..\Libraries\CMSIS\CM3\CoreSupport -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\mt -I ..\User -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\Public-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="533" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o .\objects\mt_tftlcd.o --omf_browse .\objects\mt_tftlcd.crf --depend .\objects\mt_tftlcd.d)
+F (..\Mt\mt_tftlcd.c)(0x65AF6A70)(--gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\mdk -I ..\App -I ..\Hal -I ..\Libraries\CMSIS\CM3\CoreSupport -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\mt -I ..\User -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\Public-I"E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include"-I"E:\keep going\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="533" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o .\objects\mt_tftlcd.o --omf_browse .\objects\mt_tftlcd.crf --depend .\objects\mt_tftlcd.d)
 I (..\Mt\mt_tftlcd.h)(0x65ADDC62)
 I (..\Hal\hal_tftlcd.h)(0x65ADDC62)
 I (..\Public\lcdfont.h)(0x65ADDC62)

@@ -46,3 +46,4 @@
 .\objects\test.o: ..\FreeRTOS\include\timers.h
 .\objects\test.o: ..\FreeRTOS\include\queue.h
 .\objects\test.o: ..\Public\Test.h
+.\objects\test.o: ..\Hal\hal_usart.h
