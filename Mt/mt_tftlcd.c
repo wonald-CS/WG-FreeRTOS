@@ -16,8 +16,8 @@ unsigned char ColorBuf[640];
 void LCD_Address_Set(unsigned short x1,unsigned short y1,unsigned short x2,unsigned short y2)
 {
 		LCD_WR_REG(0x2a);//列地址设置
-		LCD_WR_DATA(x1+2);
-		LCD_WR_DATA(x2+2);
+		LCD_WR_DATA(x1);
+		LCD_WR_DATA(x2);
 		LCD_WR_REG(0x2b);//行地址设置
 		LCD_WR_DATA(y1+1);
 		LCD_WR_DATA(y2+1);
@@ -37,13 +37,13 @@ void LCD_Fill(unsigned short xsta,unsigned short ysta,unsigned short xend,unsign
 	unsigned short i; 
 	LCD_Address_Set(xsta,ysta,xend-1,yend-1);//设置显示范围
 	for(i=0;i<xend;i++)
-  {
+	{
 		ColorBuf[i++] = color>>8;
 		ColorBuf[i] = color;
 	}
 	for(i=ysta;i<yend*2;i++)
 	{		
-		 DMA_SPI3_TX(ColorBuf,xend);
+		DMA_SPI3_TX(ColorBuf,xend);
 	}	
 }
 

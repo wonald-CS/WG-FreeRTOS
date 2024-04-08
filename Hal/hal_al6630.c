@@ -12,7 +12,7 @@ static void hal_timer3CapConfig(unsigned short arr,unsigned short psc)
 	GPIO_InitTypeDef GPIO_InitStructure;
 	TIM_ICInitTypeDef  TIM3_ICInitStructure;
 	TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
-  NVIC_InitTypeDef NVIC_InitStructure;
+  	NVIC_InitTypeDef NVIC_InitStructure;
 	//打开时钟
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3, ENABLE);	//使能TIM3时钟
  	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);  //使能GPIOA时钟
@@ -123,7 +123,7 @@ void hal_GetTemHum_Proc(void)
 
 	case TemHum_Step1_Start:
 		Str_TemHum_Init();
-		hal_Tim3_SentDatPin(1);
+		hal_Tim3_SentDatPin(1);				//拉低PA7（至少1MS），使al6630从休眠模式转为高速状态
 		break;
 
 	case TemHum_Step3_Respond:
@@ -169,7 +169,8 @@ void TIM3_IRQHandler(void)
 	if(TIM_GetITStatus(TIM3, TIM_IT_CC2) != RESET)//发生捕获事件。捕获完一次，从该捕获位置开始记录，如160us，到下一次捕获240us，那么TIM_GetCapture1(TIM3) = 80us；
 	{
 		TemHum_Para.Down_GetPos = TIM_GetCapture2(TIM3);
-		//if((TemHum_Para.Down_GetPos < 170) && (TemHum_Para.Down_GetPos > 150))   //第二个下降沿，响应结束此处应该为160us（不需要判断第一个下降沿）
+		//if((TemHum_Para.Down_GetPos < 170) && (TemHum_Para.Down_GetPos > 150)) 
+		//第二个下降沿，响应结束此处应该为160us（不需要判断第一个下降沿）
 		if((TemHum_Para.Down_GetPos < 180) && (TemHum_Para.Down_GetPos > 140))
 		{
 			TemHum_Para.Data_Len = 0;
@@ -183,7 +184,7 @@ void TIM3_IRQHandler(void)
 			{	
 			}
 			//else if ((TemHum_Para.Down_GetPos > 116) && (TemHum_Para.Down_GetPos < 130))  //数据1
-			else if((TemHum_Para.Down_GetPos<135) && (TemHum_Para.Down_GetPos>100))
+			else if((TemHum_Para.Down_GetPos < 135) && (TemHum_Para.Down_GetPos > 100))
 			{
 				TemHum_Para.TemHum_Rec[TemHum_Para.Data_Len/8] |= (0x80 >> (TemHum_Para.Data_Len%8));
 			}	

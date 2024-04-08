@@ -51,23 +51,24 @@ void hal_spi2CSDrive(unsigned char sta)
 }
 
 //SPIx 读写一个字节
+//TxData:要写入的字节
 //返回值:读取到的字节
 unsigned char  hal_spi2ReadWriteByte(unsigned char  TxData)
 {		
 	unsigned char retry=0;				 
-	while(SPI_I2S_GetFlagStatus(SPI2,SPI_I2S_FLAG_TXE)==RESET)//等待发送区空	
+	while(SPI_I2S_GetFlagStatus(SPI2,SPI_I2S_FLAG_TXE)==RESET)		//检查指定的SPI标志位设置与否:发送缓存空标志位
 	{
 		retry++;
 		if(retry>200)
 			return 0;
 	}	
-  SPI_I2S_SendData(SPI2,TxData);	
+	SPI_I2S_SendData(SPI2,TxData);									//通过外设SPIx发送一个数据
 	retry=0;
-	while(SPI_I2S_GetFlagStatus(SPI2,SPI_I2S_FLAG_RXNE)==RESET)//等待发送区空	
+	while(SPI_I2S_GetFlagStatus(SPI2,SPI_I2S_FLAG_RXNE)==RESET)		//检查指定的SPI标志位设置与否:接受缓存非空标志位
 	{
 		retry++;
 		if(retry>200)
 			return 0;
 	}	  						    
-	return SPI_I2S_ReceiveData(SPI2);//SPI2->DR;          //返回收到的数据						    
+	return SPI_I2S_ReceiveData(SPI2);//SPI2->DR;          			//返回通过SPIx最近接收的数据								    
 }

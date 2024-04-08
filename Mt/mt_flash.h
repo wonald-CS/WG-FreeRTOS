@@ -15,6 +15,7 @@
 void mt_flashRead(unsigned char *pBuffer,unsigned int ReadAddr,unsigned int NumByteToRead);
 void mt_flashWrite(unsigned int addr,unsigned char *p,unsigned char lon);
 
+
 #endif
 
 

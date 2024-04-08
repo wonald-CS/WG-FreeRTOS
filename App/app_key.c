@@ -21,105 +21,121 @@ EventGroupHandle_t KeyEvent;
 
 void Key_Handle(uint8_t keys)
 {
-    unsigned char keysta[3];
+//    unsigned char keysta[3];
 
-    keysta[0] = keys/10 + 0x30;
-    keysta[1] = keys%10 + 0x30;
-    keysta[2] = 0;
+//    keysta[0] = keys/10 + 0x30;
+//    keysta[1] = keys%10 + 0x30;
+//    keysta[2] = 0;
 
-    LCD_ShowString(0,40,"KEY:",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+//    LCD_ShowString(0,40,"KEY:",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
 	hal_Wtn6_Play(WTN6_VOLUE_DI);
 	
     switch((unsigned char)keys)
     {
         case KEY0:
         {
-            LCD_ShowString(50,40,"KEY0",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            //LCD_ShowString(50,40,"KEY0",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            printf("按键:KEY0\n");
         }
         break;
         case KEY1:
         {
-            LCD_ShowString(50,40,"KEY1",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            //LCD_ShowString(50,40,"KEY1",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            printf("按键:KEY1\n");
         }
         break;			
         case KEY2_UP:
         {
-            LCD_ShowString(50,40,"KEY2",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            //LCD_ShowString(50,40,"KEY2",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            printf("按键:KEY2_UP\n");
         }
         break;	
         case KEY3:
         {
-            LCD_ShowString(50,40,"KEY3",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            //LCD_ShowString(50,40,"KEY3",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            printf("按键:KEY3\n");
         }
         break;	
         case KEY4_LEFT:
         {
-            LCD_ShowString(50,40,"KEY4",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+           //LCD_ShowString(50,40,"KEY4",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            printf("按键:KEY4_LEFT\n");
         }
         break;			
         case KEY5:
         {
-            LCD_ShowString(50,40,"KEY5",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            //LCD_ShowString(50,40,"KEY5",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            printf("按键:KEY5\n");
         }
         break;
         case KEY6_RIGHT:
         {
-            LCD_ShowString(50,40,"KEY6",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            //LCD_ShowString(50,40,"KEY6",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            printf("按键:KEY6_RIGHT\n");
         }
         break;
         case KEY7:
         {
-            LCD_ShowString(50,40,"KEY7",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            //LCD_ShowString(50,40,"KEY7",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            printf("按键:KEY7\n");
         }
         break;									
         case KEY8_DOWN:
         {
-            LCD_ShowString(50,40,"KEY8",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            //LCD_ShowString(50,40,"KEY8",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            printf("按键:KEY8_DOWN\n");
         }
         break;
         case KEY9:
         {
-            LCD_ShowString(50,40,"KEY9",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            //LCD_ShowString(50,40,"KEY9",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            printf("按键:KEY9\n");
         }
         break;			
         case KEY_DISARM:
         {
-            LCD_ShowString(50,40,"DISA",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            //LCD_ShowString(50,40,"DISA",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            printf("按键:KEY_DISARM\n");
         }
         break;
         
         case KEY_HOMEARM:
         {
-            LCD_ShowString(50,40,"HOME",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            //LCD_ShowString(50,40,"HOME",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            printf("按键:KEY_HOMEARM\n");
         }
         break;
         
         case KEY_AWARARM:
         {
-            LCD_ShowString(50,40,"AWAY",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            //LCD_ShowString(50,40,"AWAY",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            printf("按键:KEY_AWARARM\n");
         }
         break;
         
         case KEY_CANCEIL_DAIL:
         {
-            LCD_ShowString(50,40,"DAIL",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            //LCD_ShowString(50,40,"DAIL",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+             printf("按键:KEY_CANCEIL_DAIL\n");
         }
         break;
 
         case KEY_SOS_DEL:
         {
-            LCD_ShowString(50,40,"SOS",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            //LCD_ShowString(50,40,"SOS",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            printf("按键:KEY_SOS_DEL\n");
         }
         break;
         case KEY_MENU:
         {
-            LCD_ShowString(50,40,"MENU",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            //LCD_ShowString(50,40,"MENU",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+            printf("按键:KEY_MENU\n");
         }
         break;
     }
 
-    LCD_ShowString(120,40,"KEYDBC:",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
-    LCD_ShowString(200,40,keysta,HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+//    LCD_ShowString(120,40,"KEYDBC:",HUE_LCD_FONT,HUE_LCD_BACK,24,0);
+//    LCD_ShowString(200,40,keysta,HUE_LCD_FONT,HUE_LCD_BACK,24,0);
 }
 
 

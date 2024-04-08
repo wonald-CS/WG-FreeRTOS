@@ -36,6 +36,8 @@ static void hal_Wtn6Config(void)
 	WTN6_CLK_HIGH;
 	
 }
+
+
 void hal_SC8002Config(void)
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
@@ -46,6 +48,8 @@ void hal_SC8002Config(void)
 	
 	SC8002_SH_HIGH;
 }
+
+
 void hal_Wtn6_Init(void)
 {
 	hal_Wtn6Config();
@@ -55,8 +59,11 @@ void hal_Wtn6_Init(void)
 	Wtn6NextNum = 0xff;
 }
 
+
 static void hal_Wtn6_PlayHandle(void)
 {
+    //时钟低电平的时候，操作数据脚
+    //Time_Num为偶数的时候，时钟脚低电平。所以数据脚偶数里面操作
     static unsigned char VolNum;
     static unsigned char Time_Num;
     Wtn6Timer--;
@@ -77,15 +84,15 @@ static void hal_Wtn6_PlayHandle(void)
 			{
 				if (Wtn6Playflag == 1)
 				{
-						VolNum = Wtn6VolueNum;
+					VolNum = Wtn6VolueNum;
 				}
 
 				WTN6_CLK_LOW;
 				if(VolNum & 0x01)
 				{
-						WTN6_DAT_HIGH;
+					WTN6_DAT_HIGH;
 				}else{
-						WTN6_DAT_LOW;
+					WTN6_DAT_LOW;
 				}             
 				
 				break;
@@ -101,18 +108,18 @@ static void hal_Wtn6_PlayHandle(void)
         
         }
 
-			if(Wtn6Playflag == 17)
-			{
-				WTN6_DAT_HIGH;
-				WTN6_CLK_HIGH;
-				Wtn6Playflag = 0;
-				if(Wtn6NextNum != 0xff)
-				{
-					hal_Wtn6_Play(Wtn6NextNum);
-					Wtn6NextNum = 0xff;
-				}
-				return;
-			}
+        if(Wtn6Playflag == 17)
+        {
+            WTN6_DAT_HIGH;
+            WTN6_CLK_HIGH;
+            Wtn6Playflag = 0;
+            if(Wtn6NextNum != 0xff)
+            {
+                hal_Wtn6_Play(Wtn6NextNum);
+                Wtn6NextNum = 0xff;
+            }
+            return;
+        }
     }
 
     hal_ResetTimer(T_WTN6,T_STA_START);	

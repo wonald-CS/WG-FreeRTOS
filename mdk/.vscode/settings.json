@@ -5,6 +5,7 @@
         "queue.h": "c",
         "system.h": "c",
         "freertos.h": "c",
-        "freertosconfig.h": "c"
+        "freertosconfig.h": "c",
+        "hal_al6630.h": "c"
     }
 }

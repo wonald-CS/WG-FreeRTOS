@@ -27,7 +27,7 @@ typedef struct
 	TIMER_STATE_TYPEDEF state;		//0-定时器未启动 1-定时器已启动
 	unsigned short CurrentCount;	//当前计时值
 	unsigned short Period;			//定时周期
-	void (*func)(void);					//函数指针	
+	void (*func)(void);				//函数指针	
 }Stu_TimerTypedef;
 
 

@@ -30,14 +30,13 @@ unsigned short mt_flashReadID(void)
 void mt_flashInit(void)
 {
 	static unsigned short produid;
-	//hal_spi2Init(); 
+	
  	produid = mt_flashReadID();
-	printf("FlashID:%d",produid);
- 	//mt_flash_test();
+	printf("FlashID:%x",produid);
 }
 
 
-//pBuffer-读取数据存储地址,ReadAddr-Flash地址,NumByteToRead-读取字节数
+//pBuffer-读取数据存储,ReadAddr-Flash地址,NumByteToRead-读取字节数
 void mt_flashRead(unsigned char *pBuffer,unsigned int ReadAddr,unsigned int NumByteToRead)   
 { 
 	unsigned char  *pBuff;
@@ -139,19 +138,19 @@ void mt_flashWrite_Secor(unsigned char * pBuffer,unsigned int WriteAddr,unsigned
 		pageremain=num;//不大于256个字节
 	while(1)
 	{	   
-		        mt_flashWritePage(pBuff,wAddr,pageremain);
-			if(num==pageremain)
-				break;//写入结束了
-			else //NumByteToWrite>pageremain
-			{
-				pBuff+=pageremain;
-				wAddr+=pageremain;	//200  56   100
-				num-=pageremain;			  //减去已经写入了的字节数
-				if(num>256)
-					pageremain=256; //一次可以写入256个字节
-				else 
-					pageremain=num; 	  //不够256个字节了
-			}		
+		mt_flashWritePage(pBuff,wAddr,pageremain);
+		if(num==pageremain)
+			break;//写入结束了
+		else //NumByteToWrite>pageremain
+		{
+			pBuff+=pageremain;
+			wAddr+=pageremain;	//200  56   100
+			num-=pageremain;			  //减去已经写入了的字节数
+			if(num>256)
+				pageremain=256; //一次可以写入256个字节
+			else 
+				pageremain=num; 	  //不够256个字节了
+		}		
 	}	    
 } 
 
@@ -164,51 +163,51 @@ void mt_flashWrite_Secor(unsigned char * pBuffer,unsigned int WriteAddr,unsigned
 void mt_flashWrite_handle(unsigned char * pBuffer,unsigned int WriteAddr,unsigned short NumByteToWrite)   
  { 
 	 
-		 unsigned char  SPI_FLASH_BUF[4096];
-//	   unsigned char testaa[200];
-		 unsigned char  *pBuff;
-	          unsigned int secpos;        ///需要写的起始的扇区
-	           unsigned short secoff;      ///写入到额起始扇区的 偏移地址
-	           unsigned short secremain;	 ///第一个写入扇区需要写入的数据的个数     
-		  unsigned short i,num;  
+	unsigned char  SPI_FLASH_BUF[4096];
+	unsigned char  *pBuff;
+	unsigned int secpos;        ///需要写的起始的扇区
+	unsigned short secoff;      ///写入到额起始扇区的 偏移地址
+	unsigned short secremain;	 ///第一个写入扇区需要写入的数据的个数     
+	unsigned short i,num;  
+	unsigned int wAddr;
 
-		 unsigned int wAddr;
-		 pBuff = pBuffer;
-		 wAddr = WriteAddr;
-		 num = NumByteToWrite;  ////
-		 secpos=wAddr/4096;//扇区地址        
-		 secoff=wAddr%4096;//在扇区内的偏移
-		 secremain=4096-secoff;//扇区剩余空间大小   
-	   if(num<=secremain)  ///num  是需要写入数据的格式   如果需要写入的数据的个数小于本扇区剩余的个数
-			 secremain=num;//不大于4096个字节   在同一个区里面写
-		 while(1) 
-		 {	
-				 mt_flashRead(SPI_FLASH_BUF,secpos*4096,4096);//读出整个扇区的内容
-				 mt_flashEraseSector(secpos);//擦除这个扇区
-				 
-				 for(i=0;i<secremain;i++)	   //复制
-				 {
-				        SPI_FLASH_BUF[i+secoff]=pBuff[i];
-				 }
-				mt_flashWrite_Secor(SPI_FLASH_BUF,secpos*4096,4096);//写入整个扇区 写已经擦除了的,直接写入扇区剩余区间. 				 
+	pBuff = pBuffer;
+	wAddr = WriteAddr;
+	num = NumByteToWrite;  ////
+	secpos=wAddr/4096;//扇区地址        
+	secoff=wAddr%4096;//在扇区内的偏移
+	secremain=4096-secoff;//扇区剩余空间大小   
+	if(num<=secremain)  ///num  是需要写入数据的格式   如果需要写入的数据的个数小于本扇区剩余的个数
+			secremain=num;//不大于4096个字节   在同一个区里面写
 
-				 if(num==secremain)   ///需要写入的数据长度和 数据长度一致的话，
-					 break;//写入结束了
-				 
-				 else//写入未结束
-				 {
-					 secpos++;//扇区地址增1
-					 secoff=0;//偏移位置为0 	 
+	while(1) 
+	{	
+		mt_flashRead(SPI_FLASH_BUF,secpos*4096,4096);//读出整个扇区的内容
+		mt_flashEraseSector(secpos);//擦除这个扇区
 
-					 pBuff+=secremain;  //指针偏移
-					 wAddr+=secremain;//写地址偏移	   
-					 num-=secremain;				//字节数递减
-					 if(num>4096)
-						 secremain=4096;	//下一个扇区还是写不完
-					 else 
-						 secremain=num;			//下一个扇区可以写完了
-				 }	 
-		 }	 	 
+		for(i=0;i<secremain;i++)	   //复制
+		{
+			SPI_FLASH_BUF[i+secoff]=pBuff[i];
+		}
+		mt_flashWrite_Secor(SPI_FLASH_BUF,secpos*4096,4096);//写入整个扇区 写已经擦除了的,直接写入扇区剩余区间. 				 
+
+		if(num==secremain)   ///需要写入的数据长度和 数据长度一致的话，
+			break;//写入结束了
+
+		else//写入未结束
+		{
+			secpos++;//扇区地址增1
+			secoff=0;//偏移位置为0 	 
+
+			pBuff+=secremain;  //指针偏移
+			wAddr+=secremain;//写地址偏移	   
+			num-=secremain;				//字节数递减
+			if(num>4096)
+				secremain=4096;	//下一个扇区还是写不完
+			else 
+				secremain=num;			//下一个扇区可以写完了
+		}	 
+	}	 	 
  } 
  //擦除一个扇区
 //Dst_Addr:扇区地址 0~511 for w25x16
@@ -247,13 +246,13 @@ void mt_flashWrite(unsigned int addr,unsigned char *p,unsigned char lon)
 //	for(i=0;i< 100;i++)
 //	{
 //		falshtest[i] = i;
-//  }		
-//	mt_flashWrite(&falshtest[0],falshdadrx,100);
-//         for(i=0;i< 100;i++)
+//	}		
+//	mt_flashWrite(falshdadrx,&falshtest[0],100);
+//	for(i=0;i< 100;i++)
 //	{
 //		falshtest[i] = 0;
-//       }	
-//  mt_flashRead(&falshtest[0],falshdadrx,100);
+//	}	
+//	mt_flashRead(&falshtest[0],falshdadrx,100);
 //}
 
 

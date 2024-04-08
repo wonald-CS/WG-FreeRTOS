@@ -51,7 +51,7 @@ void delay_1msTest(void)
 	while(i--);   
 }
 
-////
+
 en_AcLinkSta hal_Gpio_AcStateCheck(void)
 {
 	en_AcLinkSta state;
@@ -75,7 +75,7 @@ en_AcLinkSta hal_Gpio_AcStateCheck(void)
 	}
 	return AcState;///
 }
-///////////////////////////////////
+
 void hal_GPIO_WIFIPowerEN_H(void)
 {
 	GPIO_ResetBits(WIFI_POWEREN_PORT,WIFI_POWEREN_PIN);	
