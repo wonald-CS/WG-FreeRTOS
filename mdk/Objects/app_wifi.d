@@ -12,6 +12,9 @@
 .\objects\app_wifi.o: ..\FreeRTOS\include\mpu_wrappers.h
 .\objects\app_wifi.o: ..\FreeRTOS\include\task.h
 .\objects\app_wifi.o: ..\FreeRTOS\include\list.h
+.\objects\app_wifi.o: ..\FreeRTOS\include\event_groups.h
+.\objects\app_wifi.o: ..\FreeRTOS\include\timers.h
+.\objects\app_wifi.o: ..\FreeRTOS\include\queue.h
 .\objects\app_wifi.o: ..\Public\SysTick.h
 .\objects\app_wifi.o: ..\Public\system.h
 .\objects\app_wifi.o: E:\keep going\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h
@@ -43,9 +46,6 @@
 .\objects\app_wifi.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\app_wifi.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\objects\app_wifi.o: ..\Public\SysTick.h
-.\objects\app_wifi.o: ..\FreeRTOS\include\event_groups.h
-.\objects\app_wifi.o: ..\FreeRTOS\include\timers.h
-.\objects\app_wifi.o: ..\FreeRTOS\include\queue.h
 .\objects\app_wifi.o: E:\keep going\Keil\ARM\ARMCC\Bin\..\include\string.h
 .\objects\app_wifi.o: ..\Hal\hal_usart.h
 .\objects\app_wifi.o: ..\Hal\hal_GPIO.h

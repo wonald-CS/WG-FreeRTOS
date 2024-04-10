@@ -31,8 +31,7 @@
 #define LORA_UART_PORT      UART5
 
 
-extern QueueHandle_t USART3RxQueue;
-extern QueueHandle_t USART3TxQueue;
+
 
 void Hal_Usart_Init(void);
 

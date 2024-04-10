@@ -52,3 +52,4 @@
 .\objects\main.o: ..\App\app_tftlcd.h
 .\objects\main.o: ..\App\app_al6630.h
 .\objects\main.o: ..\App\app_wifi.h
+.\objects\main.o: ..\App\app_lora.h

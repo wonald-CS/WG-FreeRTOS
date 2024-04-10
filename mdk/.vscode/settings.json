@@ -6,6 +6,12 @@
         "system.h": "c",
         "freertos.h": "c",
         "freertosconfig.h": "c",
-        "hal_al6630.h": "c"
+        "hal_al6630.h": "c",
+        "hal_usart.h": "c",
+        "mt_lora.h": "c",
+        "semphr.h": "c",
+        "app_lora.h": "c",
+        "event_groups.h": "c",
+        "task.h": "c"
     }
 }

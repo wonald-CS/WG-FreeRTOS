@@ -17,6 +17,7 @@
 ".\objects\app_tftlcd.o"
 ".\objects\app_al6630.o"
 ".\objects\app_wifi.o"
+".\objects\app_lora.o"
 ".\objects\startup_stm32f10x_cl.o"
 ".\objects\misc.o"
 ".\objects\stm32f10x_adc.o"
@@ -56,6 +57,7 @@
 ".\objects\test.o"
 ".\objects\mt_flash.o"
 ".\objects\mt_tftlcd.o"
+".\objects\algorithm.o"
 --library_type=microlib --strict --scatter ".\Objects\WG02.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

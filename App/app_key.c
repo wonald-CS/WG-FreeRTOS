@@ -145,13 +145,14 @@ void Key_Handle(uint8_t keys)
 void Key_Task(void *pvParameters)
 {	
 	uint8_t u8Ret,KeyVal;
+    
 	//队列初始化
 	KeyQueue = xQueueCreate(2, sizeof(uint16_t));
 	//事件初始化
 	//KeyEvent = xEventGroupCreate();
 	//xEventGroupClearBits(KeyEvent,EVENT_ALL_BITS);
 	
-	for(;;)
+	while(1)
 	{
 		hal_Key_Proc();
 		u8Ret = xQueueReceive(KeyQueue, &KeyVal, KEY_CHECK_INTERVAL);

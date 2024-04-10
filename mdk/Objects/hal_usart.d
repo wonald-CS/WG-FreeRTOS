@@ -47,3 +47,5 @@
 .\objects\hal_usart.o: ..\Public\SysTick.h
 .\objects\hal_usart.o: ..\Public\system.h
 .\objects\hal_usart.o: ..\Public\SysTick.h
+.\objects\hal_usart.o: ..\App\app_wifi.h
+.\objects\hal_usart.o: ..\App\app_lora.h

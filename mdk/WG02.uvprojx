@@ -483,6 +483,11 @@
               <FileType>1</FileType>
               <FilePath>..\App\app_wifi.c</FilePath>
             </File>
+            <File>
+              <FileName>app_lora.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\App\app_lora.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -710,6 +715,11 @@
               <FileName>mt_tftlcd.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Mt\mt_tftlcd.c</FilePath>
+            </File>
+            <File>
+              <FileName>Algorithm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Mt\Algorithm.c</FilePath>
             </File>
           </Files>
         </Group>

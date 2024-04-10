@@ -3,11 +3,8 @@
 #include "stm32F10x.h"
 #include "string.h"
 #include "SysTick.h"
-
-
-// 定义串口3的发送和接收队列
-QueueHandle_t USART3RxQueue;
-QueueHandle_t USART3TxQueue;
+#include "app_wifi.h"
+#include "app_lora.h"
 
 
 
@@ -17,11 +14,6 @@ void Hal_Usart_Init(void)
 	GPIO_InitTypeDef GPIO_InitStructure;
 	USART_InitTypeDef USART_InitStructure; 
 	NVIC_InitTypeDef NVIC_InitStructure;
-
-
-    USART3RxQueue = xQueueCreate(10, 10*sizeof(uint8_t));
-    USART3TxQueue = xQueueCreate(10, sizeof(uint8_t*));
-
 
 	RCC_APB2PeriphClockCmd( RCC_APB2Periph_GPIOA,ENABLE);
 	RCC_APB2PeriphClockCmd( RCC_APB2Periph_GPIOB,ENABLE);
@@ -110,12 +102,52 @@ void Hal_Usart_Init(void)
 	USART_ITConfig(UART5, USART_IT_RXNE, ENABLE); 	
 	
 	USART_Cmd(USART1, ENABLE);
-	USART_Cmd(USART3, ENABLE);
-	//USART_Cmd(UART5, ENABLE);
+	//USART_Cmd(USART3, ENABLE);
+	USART_Cmd(UART5, ENABLE);
 	
 }
 
 
+
+//***************     UART5     LORA 串口通讯    ****************//
+void UART5_IRQHandler(void)
+{
+    BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+    unsigned char Data[50];
+    static unsigned char len;
+	static unsigned char dataIndex = 0;
+    Data_AppNet_Receive *Que_data;
+    
+    if (USART_GetITStatus(UART5, USART_IT_RXNE) != RESET)
+    {
+        // 读取接收到的数据
+        Data[dataIndex++] = USART_ReceiveData(UART5);
+        //分 申请入网 和 其他
+        if(Data[1] == Else_Move_Len){
+            len = sizeof(Data_Else_Receive);
+        }else if(Data[1] == App_Net_Len){
+            len = sizeof(Data_AppNet_Receive);
+        }else{
+            len = 0;
+        }
+        // 清除接收中断标志
+        USART_ClearITPendingBit(UART5, USART_IT_RXNE);        
+    }
+    
+
+
+    //单包数据完整，发送到队列
+	if (dataIndex == len)
+	{
+		Que_data = (Data_AppNet_Receive *)Data;
+    	xQueueSendFromISR(LoraQueue, Que_data, &xHigherPriorityTaskWoken);
+        len = 0;
+		dataIndex = 0;
+        portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
+	}
+
+    
+}
 
 
 //***************     USART3     WIFI ESP8266串口通讯    ****************//
@@ -130,7 +162,7 @@ void USART3_IRQHandler(void)
         data = USART_ReceiveData(USART3);
         
         // 将数据发送到接收队列
-        xQueueSendFromISR(USART3RxQueue, &data, &xHigherPriorityTaskWoken);
+        xQueueSendFromISR(Wifi_Queue, &data, &xHigherPriorityTaskWoken);
         
         // 清除接收中断标志
         USART_ClearITPendingBit(USART3, USART_IT_RXNE);

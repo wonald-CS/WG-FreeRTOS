@@ -48,3 +48,4 @@
 .\objects\test.o: ..\Public\Test.h
 .\objects\test.o: ..\Hal\hal_usart.h
 .\objects\test.o: ..\FreeRTOS\include\semphr.h
+.\objects\test.o: ..\App\app_lora.h

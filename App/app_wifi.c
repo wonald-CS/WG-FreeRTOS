@@ -10,7 +10,7 @@
 #include "hal_usart.h"
 #include "hal_GPIO.h"
 
-
+QueueHandle_t Wifi_Queue;
 /*******************************************************************************************
 *@description:WIFI模块外电或电源接入
 *@param[in]：fuc：复位或者空闲
@@ -49,14 +49,15 @@ unsigned char wifi_PowerManage()
 void Wifi_Task(void *pvParameters)
 {
 	uint8_t Tx_data,Rx_data;
-	uint8_t Ret,ret;
-
-	for(;;)
+	uint8_t Ret,ret; 
+    
+	Wifi_Queue = xQueueCreate(10, 50*sizeof(uint8_t));	    
+	while(1)
 	{
 		if(wifi_PowerManage())
 		{
 
-			Ret = xQueueReceive(USART3TxQueue, &Tx_data, 10);
+			Ret = xQueueReceive(Wifi_Queue, &Tx_data, 10);
 			if (Ret)
 			{			
 				// 发送数据到串口
@@ -66,7 +67,7 @@ void Wifi_Task(void *pvParameters)
 				while (USART_GetFlagStatus(USART3, USART_FLAG_TC) == RESET);
 			}
 			
-			ret = xQueueReceive(USART3RxQueue, &Rx_data, 10);
+			ret = xQueueReceive(Wifi_Queue, &Rx_data, 10);
 			if (ret)
 			{
 				
