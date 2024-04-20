@@ -48,30 +48,26 @@ unsigned char wifi_PowerManage()
 
 void Wifi_Task(void *pvParameters)
 {
-	uint8_t Tx_data,Rx_data;
-	uint8_t Ret,ret; 
+	uint8_t Data[50];
+	uint8_t Ret;
     
-	Wifi_Queue = xQueueCreate(10, 50*sizeof(uint8_t));	    
+	Wifi_Queue = xQueueCreate(10, 50*sizeof(uint8_t));	
+    
 	while(1)
 	{
 		if(wifi_PowerManage())
 		{
+			// USART_SendData(USART3,Buff[i]);
+			// while(USART_GetFlagStatus(USART3, USART_FLAG_TC) == RESET);                           
 
-			Ret = xQueueReceive(Wifi_Queue, &Tx_data, 10);
+			Ret = xQueueReceive(Wifi_Queue, &Data, 10);
 			if (Ret)
-			{			
-				// 发送数据到串口
-					USART_SendData(USART3, Tx_data);
-					
-				// 等待发送完成
-				while (USART_GetFlagStatus(USART3, USART_FLAG_TC) == RESET);
+			{	
+
 			}
+
 			
-			ret = xQueueReceive(Wifi_Queue, &Rx_data, 10);
-			if (ret)
-			{
-				
-			}			
+		
 		}
 
 

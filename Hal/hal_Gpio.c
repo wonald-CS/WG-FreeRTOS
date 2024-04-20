@@ -1,13 +1,6 @@
 #include "stm32F10x.h"
 #include "hal_GPIO.H"
 
-
-#define WIFI_POWEREN_PORT			  GPIOC
-#define WIFI_POWEREN_PIN 			  GPIO_Pin_4
-
-#define EC200S_POWERKEY_PORT			GPIOA
-#define EC200S_POWERKEY_PIN			  GPIO_Pin_5
-
 static unsigned char hal_GPIO_GetACState(void);
 static en_AcLinkSta AcState;// 外电的状态 静态全局变量
 

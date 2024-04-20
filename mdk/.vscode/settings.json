@@ -12,6 +12,7 @@
         "semphr.h": "c",
         "app_lora.h": "c",
         "event_groups.h": "c",
-        "task.h": "c"
+        "task.h": "c",
+        "hal_gpio.h": "c"
     }
 }

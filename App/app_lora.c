@@ -19,7 +19,7 @@ void Lora_Task(void *pvParameters)
     Data_Else_Receive Else_Rx_data;
     unsigned char Buff[50];
     unsigned char i;
-    unsigned char CheckSum = 0;
+    unsigned char CheckSum = 0; 
 	BaseType_t Ret;
 
     LoraQueue = xQueueCreate(2, sizeof(struct Data_AppNet_Re));
