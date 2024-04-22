@@ -11,6 +11,7 @@
 #include "hal_GPIO.h"
 
 QueueHandle_t Wifi_Queue;
+
 /*******************************************************************************************
 *@description:WIFI模块外电或电源接入
 *@param[in]：fuc：复位或者空闲
@@ -51,7 +52,7 @@ void Wifi_Task(void *pvParameters)
 	uint8_t Data[50];
 	uint8_t Ret;
     
-	Wifi_Queue = xQueueCreate(10, 50*sizeof(uint8_t));	
+	Wifi_Queue = xQueueCreate(10, 20*sizeof(uint8_t));	
     
 	while(1)
 	{

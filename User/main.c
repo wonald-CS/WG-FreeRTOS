@@ -12,6 +12,7 @@
 #include "app_al6630.h"
 #include "app_wifi.h"
 #include "app_lora.h"
+#include "app_4g.h"
 
 
 
@@ -29,6 +30,7 @@ TaskHandle_t TemHum_Task_Handle;
 TaskHandle_t Test_Task_Handle;
 TaskHandle_t Wifi_Task_Handle;
 TaskHandle_t Lora_Task_Handle;
+TaskHandle_t EC200N_Task_Handle;
 
 
 int main(void)
@@ -52,7 +54,8 @@ int main(void)
 	xTaskCreate(TftLcd_Task, "TftLcd_Task", GET_TASK_STACK_SIZE(300), NULL, TASK_PRIORITY_TFTLCD, &TftLcd_Task_Handle);   
 	xTaskCreate(TemHum_Task, "TemHum_Task", GET_TASK_STACK_SIZE(200), NULL, TASK_PRIORITY_TEMHUM, &TemHum_Task_Handle);
     xTaskCreate(Lora_Task, "Lora_Task", GET_TASK_STACK_SIZE(200), NULL, TASK_PRIORITY_LORA, &Lora_Task_Handle);                  
-	xTaskCreate(Test_Task, "Test_Task", GET_TASK_STACK_SIZE(1024), NULL, TASK_PRIORITY_TEST, &Test_Task_Handle);             
+	xTaskCreate(Test_Task, "Test_Task", GET_TASK_STACK_SIZE(1024), NULL, TASK_PRIORITY_TEST, &Test_Task_Handle); 
+	xTaskCreate(EC200N_Task, "EC200N_Task", GET_TASK_STACK_SIZE(1024), NULL, TASK_PRIORITY_4G, &EC200N_Task_Handle);            
     xTaskCreate(Wifi_Task, "Wifi_Task", GET_TASK_STACK_SIZE(1024), NULL, TASK_PRIORITY_WIFI, &Wifi_Task_Handle);
 
 	vTaskStartScheduler();   

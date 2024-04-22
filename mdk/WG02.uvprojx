@@ -488,6 +488,11 @@
               <FileType>1</FileType>
               <FilePath>..\App\app_lora.c</FilePath>
             </File>
+            <File>
+              <FileName>app_4g.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\App\app_4g.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

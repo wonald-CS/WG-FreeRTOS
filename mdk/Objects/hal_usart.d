@@ -49,3 +49,4 @@
 .\objects\hal_usart.o: ..\Public\SysTick.h
 .\objects\hal_usart.o: ..\App\app_wifi.h
 .\objects\hal_usart.o: ..\App\app_lora.h
+.\objects\hal_usart.o: ..\App\app_4g.h

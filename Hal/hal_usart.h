@@ -9,27 +9,28 @@
 
 #define DEBUG_TX_PORT	GPIOA
 #define DEBUF_TX_PIN	GPIO_Pin_9
-
 #define DEBUG_RX_PORT	GPIOA
 #define DEBUF_RX_PIN	GPIO_Pin_10
 
 #define LORA_RX_PORT	GPIOD
 #define LORA_RX_PIN	    GPIO_Pin_2
-
 #define LORA_TX_PORT	GPIOC
 #define LORA_TX_PIN	    GPIO_Pin_12
 
 #define WIFI_TX_PORT	GPIOB
 #define WIFI_TX_PIN	    GPIO_Pin_10
-
 #define WIFI_RX_PORT	GPIOB
 #define WIFI_RX_PIN	    GPIO_Pin_11
 
+#define EC200N_TX_PORT		GPIOA
+#define EC200N_TX_PIN		GPIO_Pin_2
+#define EC200N_RX_PORT		GPIOA
+#define EC200N_RX_PIN    	GPIO_Pin_3
 
 #define DEBUG_USART_PORT	USART1
+#define EC200N_USART_PORT	USART2
 #define WIFI_USART_PORT     USART3
 #define LORA_UART_PORT      UART5
-
 
 
 

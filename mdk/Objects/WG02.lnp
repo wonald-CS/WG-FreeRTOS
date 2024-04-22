@@ -18,6 +18,7 @@
 ".\objects\app_al6630.o"
 ".\objects\app_wifi.o"
 ".\objects\app_lora.o"
+".\objects\app_4g.o"
 ".\objects\startup_stm32f10x_cl.o"
 ".\objects\misc.o"
 ".\objects\stm32f10x_adc.o"
