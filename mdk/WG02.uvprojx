@@ -433,6 +433,11 @@
               <FileType>1</FileType>
               <FilePath>..\Hal\hal_key.c</FilePath>
             </File>
+            <File>
+              <FileName>hal_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hal\hal_adc.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -492,6 +497,11 @@
               <FileName>app_4g.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\App\app_4g.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_battery.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\App\app_battery.c</FilePath>
             </File>
           </Files>
         </Group>

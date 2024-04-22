@@ -23,3 +23,4 @@
 .\objects\hal_init.o: ..\Hal\hal_timer.h
 .\objects\hal_init.o: ..\Hal\hal_al6630.h
 .\objects\hal_init.o: ..\Hal\hal_key.h
+.\objects\hal_init.o: ..\Hal\hal_adc.h

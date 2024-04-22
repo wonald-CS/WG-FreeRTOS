@@ -1,5 +1,6 @@
 #include "stm32F10x.h"
 #include "hal_GPIO.H"
+#include "SysTick.h"
 
 static unsigned char hal_GPIO_GetACState(void);
 static en_AcLinkSta AcState;// 外电的状态 静态全局变量
@@ -37,12 +38,6 @@ static unsigned char hal_GPIO_GetACState(void)
 {
 	return (GPIO_ReadInputDataBit(CHECK_ACSTATE_PORT, GPIO_Pin_1));		
 }
-void delay_1msTest(void)
-{
-	unsigned int i=0;
-	i = 7200;
-	while(i--);   
-}
 
 
 en_AcLinkSta hal_Gpio_AcStateCheck(void)
@@ -51,22 +46,18 @@ en_AcLinkSta hal_Gpio_AcStateCheck(void)
 	static unsigned char times = 0;	//静态延时计数
 	
 	state = (en_AcLinkSta)hal_GPIO_GetACState();
-	
-	delay_1msTest();
-	if(state == AcState)
-	{////如果本次获取的状态和上次一样，则清零延时计数
-		times	= 0;
-	}
-	else if(state != AcState)
-  {///如果状态有变化
-		times	++; //计数增加
-		if(times > 20)
-		{////如果不一样的状态计数超过20次  则更新 AcState 状态。
+
+	delay_ms(1);
+	if(state == AcState){//如果本次获取的状态和上次一样，则清零延时计数
+		times = 0;
+	}else if(state != AcState){//如果状态有变化
+		times++; 
+		if(times > 20){//如果不一样的状态计数超过20次  则更新 AcState 状态。
 			times = 0;
 			AcState = state;
 		}
 	}
-	return AcState;///
+	return AcState;
 }
 
 void hal_GPIO_WIFIPowerEN_H(void)

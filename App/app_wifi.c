@@ -59,8 +59,11 @@ void Wifi_Task(void *pvParameters)
 		if(wifi_PowerManage())
 		{
 			// USART_SendData(USART3,Buff[i]);
-			// while(USART_GetFlagStatus(USART3, USART_FLAG_TC) == RESET);                           
-
+			// while(USART_GetFlagStatus(USART3, USART_FLAG_TC) == RESET);  
+			                       
+			//可以申请动态内存void *ptr = pvPortMalloc(sizeof(uint8_t));
+			//释放内存vPortFree(ptr);
+			//不过用静态内存Buff也可以，因为单片机的内存够大
 			Ret = xQueueReceive(Wifi_Queue, &Data, 10);
 			if (Ret)
 			{	

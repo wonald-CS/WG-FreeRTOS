@@ -29,3 +29,19 @@
 .\objects\hal_gpio.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\hal_gpio.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\objects\hal_gpio.o: ..\Hal\hal_GPIO.H
+.\objects\hal_gpio.o: ..\Public\SysTick.h
+.\objects\hal_gpio.o: ..\Public\system.h
+.\objects\hal_gpio.o: ..\Public\SysTick.h
+.\objects\hal_gpio.o: ..\FreeRTOS\include\FreeRTOS.h
+.\objects\hal_gpio.o: E:\keep going\Keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\hal_gpio.o: ..\FreeRTOS\include\FreeRTOSConfig.h
+.\objects\hal_gpio.o: ..\FreeRTOS\include\projdefs.h
+.\objects\hal_gpio.o: ..\FreeRTOS\include\portable.h
+.\objects\hal_gpio.o: ..\FreeRTOS\include\deprecated_definitions.h
+.\objects\hal_gpio.o: ..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h
+.\objects\hal_gpio.o: ..\FreeRTOS\include\mpu_wrappers.h
+.\objects\hal_gpio.o: ..\FreeRTOS\include\task.h
+.\objects\hal_gpio.o: ..\FreeRTOS\include\list.h
+.\objects\hal_gpio.o: ..\FreeRTOS\include\event_groups.h
+.\objects\hal_gpio.o: ..\FreeRTOS\include\timers.h
+.\objects\hal_gpio.o: ..\FreeRTOS\include\queue.h

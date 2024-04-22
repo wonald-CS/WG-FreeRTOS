@@ -54,3 +54,4 @@
 .\objects\main.o: ..\App\app_wifi.h
 .\objects\main.o: ..\App\app_lora.h
 .\objects\main.o: ..\App\app_4g.h
+.\objects\main.o: ..\App\app_battery.h

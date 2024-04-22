@@ -8,6 +8,7 @@
 #include "hal_timer.h"
 #include "hal_al6630.h"
 #include "hal_key.h"
+#include "hal_adc.h"
 
 
 
@@ -23,4 +24,5 @@ void Hal_Init(void)
 	hal_timer_Init();
 	hal_Al6630_Init();
 	hal_Key_Init();
+    hal_AdcInit();
 }

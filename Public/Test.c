@@ -25,7 +25,7 @@ void Test_Task(void *pvParameters)
 	while(1)
 	{
 		
-		u8Ret = tick_check(u32TestTick,MS_TO_TICK(5000));
+		u8Ret = tick_check(u32TestTick,MS_TO_TICK(30000));
 		if(u8Ret){
             if(xSemaphoreTake(Test_Mutex,portMAX_DELAY == pdFALSE)){
                 u32TestTick = xTaskGetTickCount();

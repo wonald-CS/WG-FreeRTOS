@@ -13,13 +13,6 @@ void Led_Task(void *pvParameters)
 	
 	while(1)
 	{
-		if(hal_Gpio_AcStateCheck() == STA_AC_LINK)
-		{}
-		else
-		{
-			u32LedTick = xTaskGetTickCount();
-		}
-
 		u8Ret = tick_check(u32LedTick,MS_TO_TICK(2000));
 		if(u8Ret){
 			u32LedTick = xTaskGetTickCount();
