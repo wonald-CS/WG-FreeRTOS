@@ -48,3 +48,4 @@
 .\objects\app_tftlcd.o: ..\FreeRTOS\include\event_groups.h
 .\objects\app_tftlcd.o: ..\FreeRTOS\include\timers.h
 .\objects\app_tftlcd.o: ..\FreeRTOS\include\queue.h
+.\objects\app_tftlcd.o: ..\App\app_wifi.h

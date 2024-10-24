@@ -48,7 +48,6 @@
 #define  COOR_ICON_SYSTEMODE_X   70
 #define  COOR_ICON_SYSTEMODE_Y   100
 
-
 enum
 {
 	FORTSIZE_12 = 12,

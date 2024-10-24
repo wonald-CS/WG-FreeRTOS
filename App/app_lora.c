@@ -51,7 +51,7 @@ void Lora_Task(void *pvParameters)
                 break;
 
             case App_Net_Len:
-                for(i = 0;i < 12;i++){
+                for(i = 0;i < MAC_LEN;i++){
                     CheckSum += AppNet_Rx_data.AppNet_ValidData.MAC[i];
                 }
                 for(i = 0;i < 2;i++){
@@ -62,6 +62,7 @@ void Lora_Task(void *pvParameters)
 
                 if(CheckSum == AppNet_Rx_data.CheckSum)
                 {
+                    printf("Lora AppNet Apply!\n");
                     //上行包校验成功，组下行包
                     AppNet_Rx_data.AppNet_ValidData.CMD += 0x80;
                     AppNet_Rx_data.CheckSum += 0x80;
@@ -84,6 +85,6 @@ void Lora_Task(void *pvParameters)
         }
 
 
-		vTaskDelay(100);		
+		vTaskDelay(20);		
 	}
 }

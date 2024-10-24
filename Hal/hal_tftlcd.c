@@ -1,5 +1,6 @@
 #include "hal_tftlcd.h"
 #include "stm32F10x.h"
+#include "SysTick.h"
 
 // AC Check Pin
 #define LCD_SCLK__PORT       GPIOB
@@ -176,23 +177,22 @@ void LCD_WR_REG(unsigned char dat)
 }
 
 
-static void hal_tftlcd_Delay(unsigned int de)
-{
-	while(de--);
-}
-
 
 void LCD_Open_Init(void)
 {
-	hal_tftlcd_Delay(10000);
+    delay_xms(100) ;
+	//hal_tftlcd_Delay(10000);
 	hal_oled_RestL();//复位
-	hal_tftlcd_Delay(10000);
+    delay_xms(100) ;
+	//hal_tftlcd_Delay(10000);
 	hal_oled_RestH();
-	hal_tftlcd_Delay(100);
+    delay_xms(100) ;
+	//hal_tftlcd_Delay(100);
 
 //************* Start Initial Sequence **********//
 	LCD_WR_REG(0x11);
-	hal_tftlcd_Delay(10000);//delay_ms(100); //Delay 120ms
+    delay_xms(100) ;
+	//hal_tftlcd_Delay(10000);//delay_ms(100); //Delay 120ms
 	LCD_WR_REG(0X36);// Memory Access Control
 	if(USE_HORIZONTAL==0)LCD_WR_DATA8(0x00);
 	else if(USE_HORIZONTAL==1)LCD_WR_DATA8(0xC0);
@@ -277,6 +277,7 @@ void LCD_Open_Init(void)
 	LCD_WR_DATA8(0x20);
 	LCD_WR_REG(0x29);
 	hal_Oled_Display_on();//打开背光
+    
 		
 }
 

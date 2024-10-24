@@ -10,6 +10,8 @@
 #define App_Net_Len 16
 #define Else_Move_Len 3
 
+#define MAC_LEN 12
+
 
 struct Lora_AppNet_ValidData{
     unsigned char CMD;                     //功能码

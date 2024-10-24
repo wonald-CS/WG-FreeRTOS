@@ -29,14 +29,14 @@ void hal_Gpio_Init(void)
 	GPIO_Init(CHECK_ACSTATE_PORT, &GPIO_InitStructure);	
 	
     AcState = (en_AcLinkSta)hal_GPIO_GetACState();  ///上电获取外电的状态   
-	hal_GPIO_WIFIPowerEN_L();
-	hal_GPIO_4GPowerKey_L();
+//	hal_GPIO_WIFIPowerEN_L();
+//	hal_GPIO_4GPowerKey_L();
 }
 
 // 获取PB1端口状态（高低电平）
 static unsigned char hal_GPIO_GetACState(void)
 {
-	return (GPIO_ReadInputDataBit(CHECK_ACSTATE_PORT, GPIO_Pin_1));		
+	return (GPIO_ReadInputDataBit(CHECK_ACSTATE_PORT, CHECK_ACSTATE_PIN));		
 }
 
 

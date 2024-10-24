@@ -250,6 +250,6 @@ void Battery_Task(void *pvParameters)
 		Battery_Show();
 
 
-		vTaskDelay(10);		
+		vTaskDelay(100);		
 	}
 }

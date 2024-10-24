@@ -10,6 +10,10 @@
         "app_key.h": "c",
         "freertos.h": "c",
         "hal_key.h": "c",
-        "task.h": "c"
+        "task.h": "c",
+        "app_wifi.h": "c",
+        "queue.h": "c",
+        "stm32f10x.h": "c",
+        "app_tftlcd.h": "c"
     }
 }

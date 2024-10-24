@@ -49,3 +49,4 @@
 .\objects\app_wifi.o: E:\keep going\Keil\ARM\ARMCC\Bin\..\include\string.h
 .\objects\app_wifi.o: ..\Hal\hal_usart.h
 .\objects\app_wifi.o: ..\Hal\hal_GPIO.h
+.\objects\app_wifi.o: ..\mt\Algorithm.h

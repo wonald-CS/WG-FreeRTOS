@@ -125,14 +125,19 @@ static void hal_Wtn6_PlayHandle(void)
     hal_ResetTimer(T_WTN6,T_STA_START);	
 }
 
-
+//这里用定时器做是因为语言芯片的要求，高低电平持续时间为300us，和唤醒的5MS
 void hal_Wtn6_Play(unsigned char VolNum)
 {
+    if(VolNum > WTN6_MAX)
+    {
+        return;
+    }
+        
 	if(Wtn6Playflag == 0)
 	{
 		hal_CreatTimer(T_WTN6,hal_Wtn6_PlayHandle,2,T_STA_START);   //100us
 		hal_Wtn6_PlayHandle();
-		GPIO_SetBits(SC8002_SH_PORT,SC8002_SH_PIN);	
+        SC8002_SH_HIGH;
 		WTN6_CLK_LOW;
 		WTN6_DAT_LOW;
 		Wtn6VolueNum = VolNum;

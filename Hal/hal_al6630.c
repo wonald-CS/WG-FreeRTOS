@@ -178,7 +178,7 @@ void TIM3_IRQHandler(void)
 		}
 		else
 		{
-			//数据先低后高，那么取下一个数据下降沿的数值作前一个数据判断0或1
+			//数据先低后高，那么取下一个数据下降沿的数值作前一个数据判断0或1。即TemHum_Para.Down_GetPos会在第二个下降沿的时候进入捕获，然后判断为数据0/1，该处只进行1操作
 			//if ((TemHum_Para.Down_GetPos > 70) && (TemHum_Para.Down_GetPos < 85))    //数据0
 			if ((TemHum_Para.Down_GetPos > 60) && (TemHum_Para.Down_GetPos < 90))
 			{	
